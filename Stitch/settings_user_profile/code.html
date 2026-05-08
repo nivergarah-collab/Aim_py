@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aim_py - Settings &amp; Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-primary-fixed": "#001a42",
+                            "on-surface-variant": "#c2c6d6",
+                            "surface": "#101415",
+                            "primary-fixed": "#d8e2ff",
+                            "on-secondary-fixed-variant": "#004883",
+                            "on-tertiary-fixed": "#001e2f",
+                            "surface-container-lowest": "#0b0f10",
+                            "surface-container-high": "#272a2c",
+                            "surface-bright": "#363a3b",
+                            "error-container": "#93000a",
+                            "secondary-container": "#0267b8",
+                            "on-primary-fixed-variant": "#004395",
+                            "on-surface": "#e0e3e5",
+                            "tertiary-container": "#009ada",
+                            "inverse-on-surface": "#2d3133",
+                            "tertiary-fixed-dim": "#89ceff",
+                            "background": "#101415",
+                            "secondary-fixed-dim": "#a4c9ff",
+                            "on-primary": "#002e6a",
+                            "inverse-surface": "#e0e3e5",
+                            "primary-container": "#4d8eff",
+                            "secondary-fixed": "#d4e3ff",
+                            "error": "#ffb4ab",
+                            "on-secondary-container": "#d6e5ff",
+                            "on-tertiary-fixed-variant": "#004c6e",
+                            "secondary": "#a4c9ff",
+                            "outline-variant": "#424754",
+                            "surface-container": "#1d2022",
+                            "tertiary": "#89ceff",
+                            "on-tertiary-container": "#002d43",
+                            "surface-container-low": "#191c1e",
+                            "on-tertiary": "#00344d",
+                            "on-secondary-fixed": "#001c39",
+                            "on-error": "#690005",
+                            "tertiary-fixed": "#c9e6ff",
+                            "on-background": "#e0e3e5",
+                            "surface-dim": "#101415",
+                            "surface-container-highest": "#323537",
+                            "surface-tint": "#adc6ff",
+                            "inverse-primary": "#005ac2",
+                            "surface-variant": "#323537",
+                            "on-primary-container": "#00285d",
+                            "primary": "#adc6ff",
+                            "outline": "#8c909f",
+                            "on-secondary": "#00315d",
+                            "on-error-container": "#ffdad6",
+                            "primary-fixed-dim": "#adc6ff"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "container-max": "1280px",
+                            "lg": "40px",
+                            "gutter": "24px",
+                            "md": "24px",
+                            "base": "4px",
+                            "xl": "64px",
+                            "sm": "16px",
+                            "xs": "8px"
+                    },
+                    "fontFamily": {
+                            "label-sm": ["Geist"],
+                            "code-md": ["JetBrains Mono"],
+                            "body-md": ["Inter"],
+                            "headline-md": ["Geist"],
+                            "body-lg": ["Inter"],
+                            "display": ["Geist"],
+                            "headline-lg": ["Geist"]
+                    },
+                    "fontSize": {
+                            "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                            "code-md": ["14px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                            "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                            "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                            "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Essential base styles to ensure custom font loading and material symbols render correctly */
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex selection:bg-primary/30 selection:text-primary">
+<!-- SideNavBar Component -->
+<nav class="bg-surface-container border-r border-outline-variant/30 shadow-[4px_0_20px_rgba(59,130,246,0.05)] fixed left-0 top-0 h-screen w-60 z-50 flex flex-col py-lg space-y-xs h-full">
+<!-- Brand -->
+<div class="px-md mb-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">terminal</span>
+<div>
+<h1 class="text-headline-md font-headline-md font-bold text-primary">Aim_py</h1>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Python Mastery</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex flex-col space-y-1 mt-md text-label-sm font-label-sm">
+<!-- Inactive Tab: Library -->
+<a class="text-on-surface-variant hover:text-on-surface flex items-center px-md py-xs gap-3 transition-all duration-300 hover:bg-surface-container-high hover:translate-x-1 duration-300 active:scale-[0.97] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span>Library</span>
+</a>
+<!-- Inactive Tab: Exercises -->
+<a class="text-on-surface-variant hover:text-on-surface flex items-center px-md py-xs gap-3 transition-all duration-300 hover:bg-surface-container-high hover:translate-x-1 duration-300 active:scale-[0.97] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span>Exercises</span>
+</a>
+<!-- Inactive Tab: Manual -->
+<a class="text-on-surface-variant hover:text-on-surface flex items-center px-md py-xs gap-3 transition-all duration-300 hover:bg-surface-container-high hover:translate-x-1 duration-300 active:scale-[0.97] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">book</span>
+<span>Manual</span>
+</a>
+<!-- ACTIVE Tab: Settings -->
+<a class="text-primary font-bold bg-secondary-container/10 border-r-4 border-primary flex items-center px-md py-xs gap-3" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span>Settings</span>
+</a>
+<!-- Inactive Tab: User -->
+<a class="text-on-surface-variant hover:text-on-surface flex items-center px-md py-xs gap-3 transition-all duration-300 hover:bg-surface-container-high hover:translate-x-1 duration-300 active:scale-[0.97] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span>User</span>
+</a>
+</div>
+</nav>
+<!-- TopAppBar Component -->
+<header class="bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 flex justify-between items-center h-16 px-md ml-60 fixed top-0 right-0 w-[calc(100%-240px)] z-40 flat no shadows text-label-sm font-label-sm">
+<div class="flex-1">
+<h1 class="hidden">Aim_py</h1>
+</div>
+<!-- Right Section: Search & Actions -->
+<div class="flex items-center gap-6">
+<!-- Search Bar -->
+<div class="relative group hidden md:block">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</div>
+<input class="bg-surface-container border border-outline-variant/30 text-on-surface text-body-md font-body-md rounded-full focus:ring-1 focus:ring-primary focus:border-primary block w-64 pl-10 p-2 placeholder-on-surface-variant/50 transition-all duration-300 focus:shadow-[0_0_15px_rgba(59,130,246,0.15)]" placeholder="Search parameters..." type="text"/>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-4 text-on-surface-variant">
+<button class="hover:text-primary duration-200 active:opacity-80 transition-all">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="hover:text-primary duration-200 active:opacity-80 transition-all">
+<span class="material-symbols-outlined">help</span>
+</button>
+<!-- Profile Image Placeholder -->
+<div class="w-8 h-8 rounded-full bg-surface-container-highest border border-outline-variant/30 flex items-center justify-center overflow-hidden cursor-pointer ml-2 hover:border-primary transition-colors duration-200">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A highly detailed, cinematic portrait of a modern user avatar suitable for a high-end educational platform. The subject is softly illuminated by subtle cyan and deep blue ambient lighting against a sleek, dark glassmorphic background. The composition is clean, centered, and professional, embodying the technical ethereal aesthetic of a sophisticated digital space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArjIL5y8mcccohwa9lL_Y7sKz0M44wTBhncjx-2Q4nYaSRAckB6RKIGEtjSNKRkombIP7MF40nMRpzApeCwF1MP557Fcvf8w8YlyYrcSj6NSC5g_vWYIDfZ5JciPkkYKVnDoeYUVESnsNd-cGUHUxKxsHg26nCyTp4xAV0TDTB0NNbq0GaKf_pyWpd9xmZv494bvdFQszsRy5_zTrIE0k8KkL3WgSs3rrbgYGnJUTtGrdY4d--Z6B6CEa4PkA0vwr78Op1G_wuoFrq"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-60 mt-16 p-lg bg-background w-full min-h-screen">
+<div class="max-w-[container-max] mx-auto">
+<header class="mb-lg">
+<h2 class="text-display font-display text-on-surface">Configuration Environment</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mt-2">Manage your preferences and profile.</p>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-md">
+<!-- User Profile Card (Left Column) -->
+<div class="lg:col-span-4 bg-surface-container border border-outline-variant/20 rounded-xl p-lg flex flex-col items-center text-center group hover:shadow-[0_0_30px_rgba(59,130,246,0.08)] hover:-translate-y-1 transition-all duration-500 relative overflow-hidden">
+<!-- Subtle Glow Background -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<div class="w-32 h-32 rounded-full p-1 bg-gradient-to-b from-primary/40 to-surface-container-highest mb-6 relative group-hover:scale-105 transition-transform duration-500">
+<img alt="Estudiante Profile Avatar" class="w-full h-full object-cover rounded-full bg-surface" data-alt="A striking, hyper-realistic close-up portrait of an anonymous 'Estudiante' user avatar. The image features a sleek, minimal, dark-mode aesthetic with soft, directional blue lighting that creates a subtle rim light effect. The background is a seamless, deep void-like indigo, emphasizing a sense of futuristic academia and technical proficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpSTydG1flFDx2I0_uqUTn0gSYG09tjol-CVyyRhLLholUhoBFlgdZZtRVumg1_K7pPuLzhC_kBnKqlIGlseDxoSJmS0RLivsGrj8099X-4vlkZ5SFS0OVpDyjMXSpFJs7WUzYAUfqGG9yTjjfJo_c1579YG2UNAN-8S-8XCHBhrajun_byDKFI1FPn7gfPJittUU8PI4_uaR0fbrL75GCJAURP9pAnXQUNeSUVLPWTEl94VSCj3g6C2mvFOw2_xKJvw5Tsgn5nrTF"/>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-on-surface mb-2">Estudiante</h3>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/30 mt-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<p class="text-label-sm font-label-sm text-on-surface-variant">En espera de sistema de login</p>
+</div>
+</div>
+<!-- Settings Preferences Card (Right Column) -->
+<div class="lg:col-span-8 bg-surface-container border border-outline-variant/20 rounded-xl p-lg group hover:shadow-[0_0_30px_rgba(59,130,246,0.05)] transition-all duration-500 flex flex-col">
+<!-- Header & Global Actions -->
+<div class="flex justify-between items-center mb-md border-b border-outline-variant/20 pb-4">
+<h3 class="text-headline-md font-headline-md text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">tune</span>
+                            App Preferences
+                        </h3>
+<div class="flex gap-3">
+<button class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 px-4 py-2 border border-outline-variant/30 rounded-lg hover:bg-surface-container-highest hover:border-primary/50">
+                                Deselect all
+                            </button>
+<button class="text-label-sm font-label-sm text-on-primary bg-primary hover:bg-primary-container transition-colors duration-200 px-4 py-2 rounded-lg shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]">
+                                Select all
+                            </button>
+</div>
+</div>
+<!-- Toggles List -->
+<div class="flex-1 space-y-3 mt-xs">
+<!-- Toggle Item 1 (Active) -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/20 hover:border-primary/40 transition-colors duration-300">
+<div>
+<h4 class="text-body-md font-body-md text-on-surface font-medium">Syntax Highlighting</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Enable rich colorization in the code editor.</p>
+</div>
+<!-- Custom Toggle Switch -->
+<div class="w-12 h-6 bg-primary rounded-full relative cursor-pointer shadow-[0_0_10px_rgba(59,130,246,0.3)]">
+<div class="absolute left-1 top-1 w-4 h-4 bg-on-primary rounded-full translate-x-6 transition-transform duration-300"></div>
+</div>
+</div>
+<!-- Toggle Item 2 (Inactive) -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/20 hover:border-outline-variant/60 transition-colors duration-300">
+<div>
+<h4 class="text-body-md font-body-md text-on-surface font-medium">Auto-Format Code</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Automatically format Python code on save.</p>
+</div>
+<!-- Custom Toggle Switch -->
+<div class="w-12 h-6 bg-surface-container-highest border border-outline-variant/30 rounded-full relative cursor-pointer">
+<div class="absolute left-1 top-1 w-4 h-4 bg-on-surface-variant rounded-full transition-transform duration-300"></div>
+</div>
+</div>
+<!-- Toggle Item 3 (Active) -->
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/20 hover:border-primary/40 transition-colors duration-300">
+<div>
+<h4 class="text-body-md font-body-md text-on-surface font-medium">Telemetry &amp; Analytics</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Share anonymous usage data to improve Aim_py.</p>
+</div>
+<!-- Custom Toggle Switch -->
+<div class="w-12 h-6 bg-primary rounded-full relative cursor-pointer shadow-[0_0_10px_rgba(59,130,246,0.3)]">
+<div class="absolute left-1 top-1 w-4 h-4 bg-on-primary rounded-full translate-x-6 transition-transform duration-300"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Manual Placeholder Card (Full Width Bottom) -->
+<div class="lg:col-span-12 bg-[#010409] border border-outline-variant/20 rounded-xl p-xl mt-md flex flex-col items-center justify-center min-h-[240px] relative overflow-hidden group perspective-[1000px]">
+<!-- Decorative MacOS window controls -->
+<div class="absolute top-4 left-4 flex gap-2 opacity-50">
+<div class="w-3 h-3 rounded-full bg-surface-variant"></div>
+<div class="w-3 h-3 rounded-full bg-surface-variant"></div>
+<div class="w-3 h-3 rounded-full bg-surface-variant"></div>
+</div>
+<!-- Ambient Glow -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-background/50 to-background opacity-50 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center group-hover:scale-105 transition-transform duration-500 delay-75">
+<span class="material-symbols-outlined text-[64px] text-primary/30 mb-4 group-hover:text-primary/60 transition-colors duration-500 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">menu_book</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface-variant/70 tracking-wide text-center">
+                            Próximamente: material teórico
+                        </h2>
+<div class="h-[1px] w-48 bg-gradient-to-r from-transparent via-primary/30 to-transparent mt-md"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

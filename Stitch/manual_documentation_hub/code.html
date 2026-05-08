@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manual - Aim_py</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#004c6e",
+                      "on-error": "#690005",
+                      "on-secondary": "#00315d",
+                      "inverse-primary": "#005ac2",
+                      "background": "#101415",
+                      "primary": "#adc6ff",
+                      "surface-container-lowest": "#0b0f10",
+                      "inverse-surface": "#e0e3e5",
+                      "on-primary-container": "#00285d",
+                      "on-background": "#e0e3e5",
+                      "tertiary-fixed": "#c9e6ff",
+                      "tertiary": "#89ceff",
+                      "on-tertiary-fixed": "#001e2f",
+                      "on-tertiary-container": "#002d43",
+                      "error-container": "#93000a",
+                      "on-error-container": "#ffdad6",
+                      "primary-container": "#4d8eff",
+                      "secondary": "#a4c9ff",
+                      "on-surface": "#e0e3e5",
+                      "on-surface-variant": "#c2c6d6",
+                      "on-primary": "#002e6a",
+                      "secondary-fixed": "#d4e3ff",
+                      "inverse-on-surface": "#2d3133",
+                      "secondary-container": "#0267b8",
+                      "on-primary-fixed-variant": "#004395",
+                      "surface-tint": "#adc6ff",
+                      "tertiary-fixed-dim": "#89ceff",
+                      "primary-fixed": "#d8e2ff",
+                      "tertiary-container": "#009ada",
+                      "surface-dim": "#101415",
+                      "surface": "#101415",
+                      "on-secondary-container": "#d6e5ff",
+                      "on-secondary-fixed": "#001c39",
+                      "error": "#ffb4ab",
+                      "surface-container-low": "#191c1e",
+                      "outline-variant": "#424754",
+                      "outline": "#8c909f",
+                      "on-secondary-fixed-variant": "#004883",
+                      "on-primary-fixed": "#001a42",
+                      "surface-container": "#1d2022",
+                      "surface-variant": "#323537",
+                      "secondary-fixed-dim": "#a4c9ff",
+                      "primary-fixed-dim": "#adc6ff",
+                      "surface-bright": "#363a3b",
+                      "surface-container-highest": "#323537",
+                      "surface-container-high": "#272a2c",
+                      "on-tertiary": "#00344d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "40px",
+                      "sm": "16px",
+                      "md": "24px",
+                      "gutter": "24px",
+                      "base": "4px",
+                      "xl": "64px",
+                      "container-max": "1280px",
+                      "xs": "8px"
+              },
+              "fontFamily": {
+                      "code-md": [
+                              "JetBrains Mono"
+                      ],
+                      "display": [
+                              "Geist"
+                      ],
+                      "headline-lg": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Geist"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "Geist"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "code-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.7",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0B1121; /* Dark oceanic background */
+            color: #e0e3e5;
+        }
+        
+        .nav-shell {
+            background-color: #161E2D;
+            border-right: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .main-canvas {
+            min-height: 100vh;
+        }
+        
+        .content-card {
+            background-color: #161E2D;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .icon-container {
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 8px;
+            padding: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-glow {
+            color: #f59e0b; /* Golden accent from the image */
+        }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden antialiased font-body-md text-body-md">
+<!-- SideNavBar -->
+<nav class="nav-shell hidden md:flex flex-col py-lg space-y-xs h-full fixed left-0 top-0 w-60 z-50">
+<div class="px-md mb-8">
+<h1 class="text-headline-md font-headline-md font-bold text-primary">Aim_py</h1>
+<p class="text-label-sm font-label-sm text-on-surface-variant mt-1">Python Mastery</p>
+</div>
+<div class="flex flex-col space-y-2 w-full">
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high hover:translate-x-1 duration-300 flex items-center px-md py-xs gap-3 transition-all duration-300 text-label-sm font-label-sm" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+                Library
+            </a>
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high hover:translate-x-1 duration-300 flex items-center px-md py-xs gap-3 transition-all duration-300 text-label-sm font-label-sm" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+                Exercises
+            </a>
+<a class="text-primary font-bold bg-secondary-container/10 border-r-4 border-primary flex items-center px-md py-xs gap-3 text-label-sm font-label-sm active:scale-[0.97] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="book" data-weight="fill" style="font-variation-settings: 'FILL' 1;">book</span>
+                Manual
+            </a>
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high hover:translate-x-1 duration-300 flex items-center px-md py-xs gap-3 transition-all duration-300 text-label-sm font-label-sm" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </a>
+<a class="text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high hover:translate-x-1 duration-300 flex items-center px-md py-xs gap-3 transition-all duration-300 text-label-sm font-label-sm" href="#">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+                User
+            </a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="main-canvas flex-1 ml-0 md:ml-60 overflow-y-auto w-full relative">
+<!-- TopAppBar Context -->
+<header class="sticky top-0 z-40 bg-[#0B1121]/80 backdrop-blur-md h-16 flex justify-between items-center px-md md:hidden">
+<h1 class="text-headline-md font-headline-md font-bold text-primary">Aim_py</h1>
+<div class="flex gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<div class="max-w-[1000px] mx-auto px-sm md:px-lg py-xl">
+<!-- Header Section -->
+<div class="mb-12">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-4xl header-glow" data-icon="menu_book">menu_book</span>
+<h1 class="text-headline-lg font-headline-lg text-on-surface">Manual de Python</h1>
+</div>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                    Documentación técnica y guías teóricas para complementar tu aprendizaje.
+                </p>
+</div>
+<!-- Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<a class="content-card rounded-xl p-md group" href="#">
+<div class="flex flex-col h-full">
+<div class="icon-container mb-6 w-12 h-12">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="code">code</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Sintaxis Básica</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow">
+                            Aprende los fundamentos del lenguaje: variables, tipos de datos, operadores y estructuras de control elementales.
+                        </p>
+<div class="mt-6 flex items-center text-primary text-label-sm font-label-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Explorar módulo <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="content-card rounded-xl p-md group" href="#">
+<div class="flex flex-col h-full">
+<div class="icon-container mb-6 w-12 h-12">
+<span class="material-symbols-outlined text-tertiary text-2xl" data-icon="account_tree">account_tree</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Estructuras de Control</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow">
+                            Domina el flujo de tu programa utilizando condicionales y bucles para crear lógica compleja.
+                        </p>
+<div class="mt-6 flex items-center text-primary text-label-sm font-label-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Explorar módulo <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="content-card rounded-xl p-md group" href="#">
+<div class="flex flex-col h-full">
+<div class="icon-container mb-6 w-12 h-12">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="extension">extension</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Funciones y Módulos</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow">
+                            Organiza tu código escribiendo bloques reutilizables e importa librerías estándar o externas.
+                        </p>
+<div class="mt-6 flex items-center text-primary text-label-sm font-label-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Explorar módulo <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="content-card rounded-xl p-md group" href="#">
+<div class="flex flex-col h-full">
+<div class="icon-container mb-6 w-12 h-12">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="view_in_ar">view_in_ar</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Programación Orientada a Objetos</h3>
+<p class="text-body-md font-body-md text-on-surface-variant flex-grow">
+                            Entiende las clases, objetos, herencia y polimorfismo para estructurar aplicaciones escalables.
+                        </p>
+<div class="mt-6 flex items-center text-primary text-label-sm font-label-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Explorar módulo <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</main>
+</body></html>

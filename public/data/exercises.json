@@ -1,0 +1,1559 @@
+[
+  {
+    "id": "01_ejercicio_2_3_4_edad",
+    "nombre": "01_Ejercicio_2.3.4_edad.py",
+    "premisa": "Premisa - Actividad 1 — Mayor o menor de edad\nUn sistema que consulte la edad y de acuerdo a ella indique si la persona es mayor de edad o no.",
+    "solucion": "edad = int(input(\"Ingrese su edad: \"))\n\nif edad >= 18:\n    print(\"La persona es mayor de edad.\")\nelse:\n    print(\"La persona es menor de edad.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "edad = int(input(\"Ingrese su edad: \"))\nif edad >= 18:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    print(\"La persona es mayor de edad.\")\nelse:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    print(\"La persona es menor de edad.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "02_ejercicio_2_3_2_descuento",
+    "nombre": "02_Ejercicio_2.3.2_descuento.py",
+    "premisa": "Premisa - Ejercicio 1 — Descuento por edad (reordenar código)\nEl siguiente código debe aplicar descuentos por rangos de edad, pero está incorrecto. Reordenarlo para que valide:\n- Entre 0 y menor que 18 años → descuento de 50%\n- Entre 18 y menor que 30 años → descuento de 20%\n- Mayor o igual a 60 años → descuento de 90%\n- Cualquier otro caso → no aplica descuento\n\n**Código con errores:**\n```python\n#Descuento por edad\nedad = int(input(\"Ingrese su edad\"))\n\nif edad > 0 and edad > 15:\n    print(f\"Edad: {edad} ,tiene descuento de un 50% \")\nelif edad > 30 and edad < 30:\n    print(f\"Edad: {edad} ,tiene descuento de un 20%\")\nelif edad > 60:\n    print(f\"Edad: {edad} ,tiene descuento de un 90%\")\nelse:\n    print(f\"Edad: {edad} ,no aplica descuento\")\n```",
+    "solucion": "#Descuento por edad\nedad = int(input(\"Ingrese su edad\"))\n\nif edad > 0 and edad < 18:\n    print(f\"Edad: {edad} ,tiene descuento de un 50% \")\nelif edad >= 18 and edad < 30:\n    print(f\"Edad: {edad} ,tiene descuento de un 20%\")\nelif edad >= 60:\n    print(f\"Edad: {edad} ,tiene descuento de un 90%\")\nelse:\n    print(f\"Edad: {edad} ,no aplica descuento\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "#Descuento por edad\nedad = int(input(\"Ingrese su edad\"))\nif edad > 0 and edad < 18:\n    print(f\"Edad: {edad} ,tiene descuento de un 50% \")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "elif edad >= 18 and edad < 30:\n    print(f\"Edad: {edad} ,tiene descuento de un 20%\")\nelif edad >= 60:\n    print(f\"Edad: {edad} ,tiene descuento de un 90%\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "else:\n    print(f\"Edad: {edad} ,no aplica descuento\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "descuentos",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "03_ejercicio_2_3_2_login",
+    "nombre": "03_Ejercicio_2.3.2_login.py",
+    "premisa": "Premisa - Ejercicio 2 — Validación de usuario y contraseña (sentencia faltante)\nAl siguiente código le falta una sentencia. Determinar cuál es la condición correcta para dar la bienvenida cuando el usuario ingresa `user = \"duoc\"` y `pwd = \"123duoc\"`:\n\n```python\n# validación user y pass\nuser = input(\"ingrese su user\")\npwd = input(\"Ingrese su pass\")\n\n# Aquí va la sentencia faltante\n    print(\"Bienvenido\")\nelse:\n    print(\"Error en contraseña\")\n```",
+    "solucion": "# validacion user y pass\nuser = input(\"ingrese su user\")\npwd = input(\"Ingrese su pass\")\n\nif user == \"duoc\" and pwd == \"123duoc\":\n    print(\"Bienvenido\")\nelse:\n    print(\"Error en contrasena\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "# validacion user y pass\nuser = input(\"ingrese su user\")\npwd = input(\"Ingrese su pass\")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "if user == \"duoc\" and pwd == \"123duoc\":\n    print(\"Bienvenido\")\nelse:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    print(\"Error en contrasena\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "python",
+      "salida",
+      "validacion"
+    ]
+  },
+  {
+    "id": "04_ejercicio_2_3_4_login",
+    "nombre": "04_Ejercicio_2.3.4_login.py",
+    "premisa": "Premisa - Actividad 2 — Validación de usuario y contraseña\nCrear un programa de validación de usuario y contraseña. Los únicos dos usuarios válidos son:\n- User1: `pedro` — Contraseña: `1234`\n- User2: `angel` — Contraseña: `a4s1`",
+    "solucion": "user = input(\"Ingrese su usuario: \")\npwd = input(\"Ingrese su contraseña: \")\n\nif (user == \"pedro\" and pwd == \"1234\") or (user == \"angel\" and pwd == \"a4s1\"):\n    print(\"Bienvenido.\")\nelse:\n    print(\"Usuario o contraseña incorrectos.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "user = input(\"Ingrese su usuario: \")\npwd = input(\"Ingrese su contraseña: \")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "if (user == \"pedro\" and pwd == \"1234\") or (user == \"angel\" and pwd == \"a4s1\"):\n    print(\"Bienvenido.\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "else:\n    print(\"Usuario o contraseña incorrectos.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "python",
+      "salida",
+      "validacion"
+    ]
+  },
+  {
+    "id": "05_ejercicio_2_3_2_devolucion",
+    "nombre": "05_Ejercicio_2.3.2_devolucion.py",
+    "premisa": "Premisa - Ejercicio 3 — Devolución de dinero (seguimiento de código)\nDado el siguiente código, ¿qué mensaje imprimirá si se ingresa user `\"duoc123\"`, pass `\"123duoc\"` y un monto de devolución de $120.000?\n\n```python\n#Devolución Dinero\nuser = input(\"Ingrese el usuario: \")\npwd = input(\"Ingrese su password: \")\n\nif user == \"duoc\" and pwd == \"123duoc\":\n    valorDev = int(input(\"Bienvenido, Ingrese el valor a devolver: \"))\n    if valorDev > 100000:\n        print(\"Se dará la máxima urgencia a su devolución de dinero\")\n    else:\n        print(\"El caso ha quedado registrado, le informaremos lo antes posible\")\nelse:\n    print(\"Error en contraseña\")\n```",
+    "solucion": "# Solucion:\n# El sistema imprimirá `\"Error en contraseña\"`, porque el usuario ingresado es `\"duoc123\"` y el código espera `\"duoc\"`. La condición `if` resulta falsa y cae al `else`.",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Procesar los valores intermedios segun las reglas del enunciado."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Procesar los valores intermedios segun las reglas del enunciado."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "solucion completa",
+        "lineas": "# Solucion:\n# El sistema imprimirá `\"Error en contraseña\"`, porque el usuario ingresado es `\"duoc123\"` y el código espera `\"duoc\"`. La condición `if` resulta falsa y cae al `else`.",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "resultado",
+        "lineas": "# Solucion:\n# El sistema imprimirá `\"Error en contraseña\"`, porque el usuario ingresado es `\"duoc123\"` y el código espera `\"duoc\"`. La condición `if` resulta falsa y cae al `else`.",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "python"
+    ]
+  },
+  {
+    "id": "06_ejercicio_2_3_4_promedio",
+    "nombre": "06_Ejercicio_2.3.4_promedio.py",
+    "premisa": "Premisa - Actividad 3 — Promedio de 3 notas\nSolicitar el ingreso de 3 notas por pantalla, calcular el promedio (igual ponderación), e indicar `\"Aprobado\"` si el promedio es igual o mayor a 4.0.",
+    "solucion": "nota1 = float(input(\"Ingrese la nota 1: \"))\nnota2 = float(input(\"Ingrese la nota 2: \"))\nnota3 = float(input(\"Ingrese la nota 3: \"))\n\npromedio = (nota1 + nota2 + nota3) / 3\n\nif promedio >= 4.0:\n    print(f\"Promedio: {promedio:.1f} - Aprobado\")\nelse:\n    print(f\"Promedio: {promedio:.1f} - Reprobado\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "nota1 = float(input(\"Ingrese la nota 1: \"))\nnota2 = float(input(\"Ingrese la nota 2: \"))\nnota3 = float(input(\"Ingrese la nota 3: \"))",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "promedio = (nota1 + nota2 + nota3) / 3\nif promedio >= 4.0:\n    print(f\"Promedio: {promedio:.1f} - Aprobado\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "else:\n    print(f\"Promedio: {promedio:.1f} - Reprobado\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "07_ejercicio_2_3_4_quiz",
+    "nombre": "07_Ejercicio_2.3.4_quiz.py",
+    "premisa": "Premisa - Actividad 4 — Quiz: animales acuáticos\nMostrar el siguiente quiz por pantalla y asignar puntaje según la respuesta:\n\n```\n¿Cuál de los siguientes animales vive en el agua?\n    Perro\n    Cocodrilo\n    Conejo\n    Tiburón\n```\n\n- Cocodrilo → +0.5 puntos\n- Tiburón → +1.0 punto\n- Cualquier otro → sin puntaje\n\nMostrar el puntaje obtenido al final.",
+    "solucion": "print(\"¿Cuál de los siguientes animales vive en el agua?\")\nprint(\"Perro\")\nprint(\"Cocodrilo\")\nprint(\"Conejo\")\nprint(\"Tiburón\")\n\npuntaje = 0\nrespuesta = input(\"Ingrese su respuesta: \")\n\nif respuesta == \"Cocodrilo\":\n    puntaje += 0.5\nelif respuesta == \"Tiburón\":\n    puntaje += 1.0\n\nprint(f\"Puntaje obtenido: {puntaje}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "print(\"¿Cuál de los siguientes animales vive en el agua?\")\nprint(\"Perro\")\nprint(\"Cocodrilo\")\nprint(\"Conejo\")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "print(\"Tiburón\")\npuntaje = 0\nrespuesta = input(\"Ingrese su respuesta: \")\nif respuesta == \"Cocodrilo\":",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    puntaje += 0.5\nelif respuesta == \"Tiburón\":\n    puntaje += 1.0\nprint(f\"Puntaje obtenido: {puntaje}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "python",
+      "quiz",
+      "salida"
+    ]
+  },
+  {
+    "id": "08_ejercicio_2_3_4_quiz",
+    "nombre": "08_Ejercicio_2.3.4_quiz.py",
+    "premisa": "Premisa - Actividad 5 - Formulario de 3 preguntas con escala de notas\nCrear un formulario con 3 preguntas y 4 alternativas cada una.\nPara que la solucion esperada sea reproducible, usar el tema peliculas y estas preguntas:\n1. En que ano se estreno Titanic?\n   a) 1995   b) 1997   c) 2000   d) 1999\n   Respuesta correcta: b\n2. Quien dirigio El Padrino?\n   a) Spielberg   b) Tarantino   c) Coppola   d) Kubrick\n   Respuesta correcta: c\n3. En que pelicula aparece la frase \"Hasta la vista, baby\"?\n   a) RoboCop   b) Terminator 2   c) Die Hard   d) Predator\n   Respuesta correcta: b\nCada respuesta correcta suma 1 punto.\nEscala final: 3 puntos = nota 7.0; 2 puntos = nota 5.5; 1 punto = nota 4.0; 0 puntos = nota 2.0.",
+    "solucion": "puntaje = 0\n\nprint(\"--- Quiz de Películas ---\")\n\nprint(\"1. ¿En qué año se estrenó Titanic?\")\nprint(\"a) 1995   b) 1997   c) 2000   d) 1999\")\nresp1 = input(\"Respuesta: \")\nif resp1 == \"b\":\n    puntaje += 1.0\n\nprint(\"2. ¿Quién dirigió El Padrino?\")\nprint(\"a) Spielberg   b) Tarantino   c) Coppola   d) Kubrick\")\nresp2 = input(\"Respuesta: \")\nif resp2 == \"c\":\n    puntaje += 1.0\n\nprint(\"3. ¿En qué película aparece 'Hasta la vista, baby'?\")\nprint(\"a) RoboCop   b) Terminator 2   c) Die Hard   d) Predator\")\nresp3 = input(\"Respuesta: \")\nif resp3 == \"b\":\n    puntaje += 1.0\n\nprint(f\"Puntaje total: {puntaje}\")\n\nif puntaje == 3.0:\n    nota = 7.0\nelif puntaje == 2.0:\n    nota = 5.5\nelif puntaje == 1.0:\n    nota = 4.0\nelse:\n    nota = 2.0\n\nprint(f\"Nota equivalente: {nota}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "puntaje = 0\nprint(\"--- Quiz de Películas ---\")\nprint(\"1. ¿En qué año se estrenó Titanic?\")\nprint(\"a) 1995   b) 1997   c) 2000   d) 1999\")\nresp1 = input(\"Respuesta: \")\nif resp1 == \"b\":\n    puntaje += 1.0\nprint(\"2. ¿Quién dirigió El Padrino?\")\nprint(\"a) Spielberg   b) Tarantino   c) Coppola   d) Kubrick\")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "resp2 = input(\"Respuesta: \")\nif resp2 == \"c\":\n    puntaje += 1.0\nprint(\"3. ¿En qué película aparece 'Hasta la vista, baby'?\")\nprint(\"a) RoboCop   b) Terminator 2   c) Die Hard   d) Predator\")\nresp3 = input(\"Respuesta: \")\nif resp3 == \"b\":\n    puntaje += 1.0\nprint(f\"Puntaje total: {puntaje}\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "if puntaje == 3.0:\n    nota = 7.0\nelif puntaje == 2.0:\n    nota = 5.5\nelif puntaje == 1.0:\n    nota = 4.0\nelse:\n    nota = 2.0\nprint(f\"Nota equivalente: {nota}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "python",
+      "quiz",
+      "salida"
+    ]
+  },
+  {
+    "id": "09_ejercicio_2_3_5_compra",
+    "nombre": "09_Ejercicio_2.3.5_compra.py",
+    "premisa": "Premisa - Ejercicio 2 — Empresa \"Chispa Divertida\": validación de compra\nLa empresa \"Chispa Divertida\" necesita validar que todos los campos obligatorios existan antes de procesar el pago: nombre, teléfono, producto y cantidad.",
+    "solucion": "print(\"Ingrese los siguientes datos para realizar su compra\")\nnombre = input(\"Nombre: \")\ntelefono = input(\"Teléfono: \")\nproducto = input(\"Nombre del producto: \")\ncantidad = input(\"Cantidad: \")\nopcion = input(\"¿Está seguro que desea pagar? ('s' o 'n'): \")\n\nif opcion == \"s\":\n    if nombre == \"\" or telefono == \"\" or producto == \"\" or cantidad == \"\":\n        print(\"Faltan datos por ingresar. Toda la información es obligatoria.\")\n        print(f\"Nombre: {nombre}\")\n        print(f\"Teléfono: {telefono}\")\n        print(f\"Producto: {producto}\")\n        print(f\"Cantidad: {cantidad}\")\n        print(\"Vuelva a comenzar.\")\n    else:\n        print(\"La compra se ha realizado con éxito. Muchas gracias.\")\nelse:\n    print(\"La compra no se ha realizado. No se ha realizado ningún cobro.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "print(\"Ingrese los siguientes datos para realizar su compra\")\nnombre = input(\"Nombre: \")\ntelefono = input(\"Teléfono: \")\nproducto = input(\"Nombre del producto: \")\ncantidad = input(\"Cantidad: \")\nopcion = input(\"¿Está seguro que desea pagar? ('s' o 'n'): \")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "if opcion == \"s\":\n    if nombre == \"\" or telefono == \"\" or producto == \"\" or cantidad == \"\":\n        print(\"Faltan datos por ingresar. Toda la información es obligatoria.\")\n        print(f\"Nombre: {nombre}\")\n        print(f\"Teléfono: {telefono}\")\n        print(f\"Producto: {producto}\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "        print(f\"Cantidad: {cantidad}\")\n        print(\"Vuelva a comenzar.\")\n    else:\n        print(\"La compra se ha realizado con éxito. Muchas gracias.\")\nelse:\n    print(\"La compra no se ha realizado. No se ha realizado ningún cobro.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "compras",
+      "condicionales",
+      "entrada",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "10_ejercicio_2_3_5_interruptor",
+    "nombre": "10_Ejercicio_2.3.5_interruptor.py",
+    "premisa": "Premisa - Ejercicio 3 — Interruptor de escalera digital (NOT XOR)\nLa empresa eléctrica \"Luz de la mañana\" quiere un interruptor digital: la luz se prende si ambos interruptores están en el mismo estado (ambos ON o ambos OFF). Completar la condición del `if`:\n\n```python\ninterruptor1 = 1\ninterruptor2 = 0\n\nif ?:\n    print(\"Prende la luz\")\nelse:\n    print(\"Apaga la luz\")\n```",
+    "solucion": "interruptor1 = 1\ninterruptor2 = 0\n\nif not (interruptor1 ^ interruptor2):\n    print(\"Prende la luz\")\nelse:\n    print(\"Apaga la luz\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Procesar los valores intermedios segun las reglas del enunciado."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "interruptor1 = 1\ninterruptor2 = 0",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "if not (interruptor1 ^ interruptor2):\n    print(\"Prende la luz\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "else:\n    print(\"Apaga la luz\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "11_ejercicio_2_3_5_test",
+    "nombre": "11_Ejercicio_2.3.5_test.py",
+    "premisa": "Premisa - Ejercicio 1 - Centro de psicologia del estudiante\nEl centro de psicologia del estudiante desea generar una encuesta para describir el nivel de desarrollo de los alumnos.\nEl programa debe pedir 12 respuestas usando 's' para si y 'n' para no.\nPreguntas:\n1. Deja para despues lo que puede hacer ahora?\n2. Presta atencion en clases?\n3. Resuelve sus dudas con el profesor?\n4. Prueba sus hipotesis antes de preguntar?\n5. Utiliza su tiempo libre para aprender cosas nuevas?\n6. Utiliza otra fuente de informacion para resolver dudas?\n7. Estudia solo un dia antes de la prueba?\n8. A sus amigos solo les gusta pasar el rato?\n9. A menudo realiza acciones que no son importantes?\n10. Le gustaria no tener que trabajar?\n11. Le gusta leer?\n12. Le gustan las redes sociales?\nSumar 1 punto de riesgo cuando la respuesta sea 's' en las preguntas 1, 7, 8, 9, 10 y 12.\nSumar 1 punto de riesgo cuando la respuesta sea 'n' en las preguntas 2, 3, 4, 5, 6 y 11.\nCategorias: 0 a 3 pts = buen desempeno; 4 a 6 pts = puede mejorar; 7 a 9 pts = algunos desafios; 10 o mas pts = muchos desafios.",
+    "solucion": "print(\"Test del buen estudiante: \")\nprint(\"Responda con una 's' si es sí o con una 'n' si es no.\")\npregunta1 = input(\"¿Deja para después lo que puede hacer ahora? \")\npregunta2 = input(\"¿Presta atención en clases? \")\npregunta3 = input(\"¿Resuelve sus dudas con el profesor? \")\npregunta4 = input(\"¿Prueba sus hipótesis antes de preguntar? \")\npregunta5 = input(\"¿Utiliza su tiempo libre para aprender cosas nuevas? \")\npregunta6 = input(\"¿Utiliza otra fuente de información para resolver dudas? \")\npregunta7 = input(\"¿Estudia solo un día antes de la prueba? \")\npregunta8 = input(\"¿A sus amigos solo les gusta pasar el rato? \")\npregunta9 = input(\"¿A menudo realiza acciones que no son importantes? \")\npregunta10 = input(\"¿Le gustaría no tener que trabajar? \")\npregunta11 = input(\"¿Le gusta leer? \")\npregunta12 = input(\"¿Le gustan las redes sociales? \")\n\npuntaje_si = 0\npuntaje_no = 0\n\nif pregunta1 == \"s\":\n    puntaje_si += 1\nif pregunta2 == \"n\":\n    puntaje_no += 1\nif pregunta3 == \"n\":\n    puntaje_no += 1\nif pregunta4 == \"n\":\n    puntaje_no += 1\nif pregunta5 == \"n\":\n    puntaje_no += 1\nif pregunta6 == \"n\":\n    puntaje_no += 1\nif pregunta7 == \"s\":\n    puntaje_si += 1\nif pregunta8 == \"s\":\n    puntaje_si += 1\nif pregunta9 == \"s\":\n    puntaje_si += 1\nif pregunta10 == \"s\":\n    puntaje_si += 1\nif pregunta11 == \"n\":\n    puntaje_no += 1\nif pregunta12 == \"s\":\n    puntaje_si += 1\n\ntotal = puntaje_no + puntaje_si\n\nif total < 4:\n    print(\"Usted es un alumno de buen desempeño\")\nif total >= 4 and total < 7:\n    print(\"Usted es un alumno que puede mejorar\")\nif total >= 7 and total < 10:\n    print(\"Usted es un alumno con algunos desafíos\")\nif total >= 10:\n    print(\"Usted alumno con muchos desafíos\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "print(\"Test del buen estudiante: \")\nprint(\"Responda con una 's' si es sí o con una 'n' si es no.\")\npregunta1 = input(\"¿Deja para después lo que puede hacer ahora? \")\npregunta2 = input(\"¿Presta atención en clases? \")\npregunta3 = input(\"¿Resuelve sus dudas con el profesor? \")\npregunta4 = input(\"¿Prueba sus hipótesis antes de preguntar? \")\npregunta5 = input(\"¿Utiliza su tiempo libre para aprender cosas nuevas? \")\npregunta6 = input(\"¿Utiliza otra fuente de información para resolver dudas? \")\npregunta7 = input(\"¿Estudia solo un día antes de la prueba? \")\npregunta8 = input(\"¿A sus amigos solo les gusta pasar el rato? \")\npregunta9 = input(\"¿A menudo realiza acciones que no son importantes? \")\npregunta10 = input(\"¿Le gustaría no tener que trabajar? \")\npregunta11 = input(\"¿Le gusta leer? \")\npregunta12 = input(\"¿Le gustan las redes sociales? \")\npuntaje_si = 0\npuntaje_no = 0\nif pregunta1 == \"s\":",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    puntaje_si += 1\nif pregunta2 == \"n\":\n    puntaje_no += 1\nif pregunta3 == \"n\":\n    puntaje_no += 1\nif pregunta4 == \"n\":\n    puntaje_no += 1\nif pregunta5 == \"n\":\n    puntaje_no += 1\nif pregunta6 == \"n\":\n    puntaje_no += 1\nif pregunta7 == \"s\":\n    puntaje_si += 1\nif pregunta8 == \"s\":\n    puntaje_si += 1\nif pregunta9 == \"s\":\n    puntaje_si += 1",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "if pregunta10 == \"s\":\n    puntaje_si += 1\nif pregunta11 == \"n\":\n    puntaje_no += 1\nif pregunta12 == \"s\":\n    puntaje_si += 1\ntotal = puntaje_no + puntaje_si\nif total < 4:\n    print(\"Usted es un alumno de buen desempeño\")\nif total >= 4 and total < 7:\n    print(\"Usted es un alumno que puede mejorar\")\nif total >= 7 and total < 10:\n    print(\"Usted es un alumno con algunos desafíos\")\nif total >= 10:\n    print(\"Usted alumno con muchos desafíos\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "python",
+      "quiz",
+      "salida"
+    ]
+  },
+  {
+    "id": "12_ejercicio_2_3_5_pizzeria",
+    "nombre": "12_Ejercicio_2.3.5_pizzeria.py",
+    "premisa": "Premisa - Ejercicio 5 - Pizzeria Cesar's Pizza\nLa pizzeria Cesar's Pizza necesita un programa para calcular el costo del pedido.\nSe debe pedir el numero de pizza y la cantidad de pizzas.\nCalcular neto, IVA del 19% y total a pagar.\nPrecios:\n1. PEPPERONI = $6000\n2. QUESO = $7000\n3. JAMON = $8000\n4. 4N1 = $10000\n5. HULA HAWAIIAN = $10000\n6. ULTIMATE SUPREME = $11000\n7. VEGGIE = $12000\n8. 3 MEAT TREAT = $12000\n9. SUPER CHEESE 4N1 = $12000\n10. CHICKEN BBQ = $12000",
+    "solucion": "print(\"Bienvenido a Cesar's Pizza\")\nprint(\"1.- PEPPERONI\\n2.- QUESO\\n3.- JAMÓN\\n4.- 4N1\\n5.- HULA HAWAIIAN\")\nprint(\"6.- ULTIMATE SUPREME\\n7.- VEGGIE\\n8.- 3 MEAT TREAT\\n9.- SUPER CHEESE 4N1\\n10.- CHICKEN BBQ\")\n\nopcion = input(\"Elija su pizza (número): \")\ncantidad = int(input(\"¿Cuántas pizzas desea?: \"))\n\nif opcion == \"1\":\n    precio = 6000\nelif opcion == \"2\":\n    precio = 7000\nelif opcion == \"3\":\n    precio = 8000\nelif opcion == \"4\" or opcion == \"5\":\n    precio = 10000\nelif opcion == \"6\":\n    precio = 11000\nelif opcion >= \"7\":\n    precio = 12000\n\nneto = precio * cantidad\niva = neto * 0.19\ntotal = neto + iva\nprint(f\"Neto: {neto}\")\nprint(f\"IVA: {iva}\")\nprint(f\"Total a pagar: {total}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "print(\"Bienvenido a Cesar's Pizza\")\nprint(\"1.- PEPPERONI\\n2.- QUESO\\n3.- JAMÓN\\n4.- 4N1\\n5.- HULA HAWAIIAN\")\nprint(\"6.- ULTIMATE SUPREME\\n7.- VEGGIE\\n8.- 3 MEAT TREAT\\n9.- SUPER CHEESE 4N1\\n10.- CHICKEN BBQ\")\nopcion = input(\"Elija su pizza (número): \")\ncantidad = int(input(\"¿Cuántas pizzas desea?: \"))\nif opcion == \"1\":\n    precio = 6000\nelif opcion == \"2\":",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    precio = 7000\nelif opcion == \"3\":\n    precio = 8000\nelif opcion == \"4\" or opcion == \"5\":\n    precio = 10000\nelif opcion == \"6\":\n    precio = 11000\nelif opcion >= \"7\":",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    precio = 12000\nneto = precio * cantidad\niva = neto * 0.19\ntotal = neto + iva\nprint(f\"Neto: {neto}\")\nprint(f\"IVA: {iva}\")\nprint(f\"Total a pagar: {total}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "compras",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "13_ejercicio_2_3_5_aventura",
+    "nombre": "13_Ejercicio_2.3.5_aventura.py",
+    "premisa": "Premisa - Ejercicio 4 - Juego de aventuras \"El banquete\"\nCrear un prototipo de juego de aventuras por consola.\nEl jugador puede moverse con 'd' (derecha), 'a' (izquierda) o 'w' (adelante).\nPrimera decision: si elige 'a', aparece un oso; si elige 'd', aparece una serpiente; en cualquier otro caso aparece una luz.\nSegunda decision en cada ruta:\n- Ruta oso: 'w' termina con el oso atacando; 'a' termina con una planta carnivora; cualquier otra opcion lleva a un tunel al siguiente nivel.\n- Ruta serpiente: 'w' termina con mordida de serpiente; 'a' termina con una planta carnivora; cualquier otra opcion lleva a un tunel al siguiente nivel.\n- Ruta luz: 'w' lleva al siguiente nivel; 'a' termina con una planta carnivora; cualquier otra opcion termina con un leon atacando.\nAl final siempre mostrar un mensaje de fin de partida.",
+    "solucion": "print(\"Juego: La gran aventura\")\nprint(\"Puedes moverte a la derecha 'd', a la izquierda 'a' o hacia adelante 'w'\")\nopcion = input(\"Corres hacia la montaña nevada. Un ruido te detiene. (muévete): \")\n\nif opcion == \"a\":\n    print(\"Ves un gran oso que comienza a avanzar a ti.\")\n    opcion = input(\"Te quedas quieto. Te comienzas a deslizar hacia un lado: \")\n    if opcion == \"w\":\n        print(\"Te mueves hacia adelante y el oso te mata.\")\n    elif opcion == \"a\":\n        print(\"Te mueves a la izquierda y una planta carnívora te come.\")\n    else:\n        print(\"Te mueves a la derecha y ves un túnel que te lleva al siguiente nivel.\")\nelif opcion == \"d\":\n    print(\"Ves una serpiente a 30 cm de tu pie.\")\n    opcion = input(\"Te quedas quieto. Te comienzas a deslizar hacia un lado: \")\n    if opcion == \"w\":\n        print(\"La serpiente te muerde y mueres.\")\n    elif opcion == \"a\":\n        print(\"Te mueves a la izquierda y una planta carnívora te come.\")\n    else:\n        print(\"Te mueves a la derecha y ves un túnel que te lleva al siguiente nivel.\")\nelse:\n    print(\"Ves una luz que se acerca.\")\n    opcion = input(\"Te quedas quieto. Te comienzas a deslizar hacia un lado: \")\n    if opcion == \"w\":\n        print(\"El túnel te lleva al siguiente nivel.\")\n    elif opcion == \"a\":\n        print(\"Te mueves a la izquierda y una planta carnívora te come.\")\n    else:\n        print(\"Un león se abalanza contra ti.\")\n\nprint(\"Fin de la partida. Muchas gracias por jugar.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "print(\"Juego: La gran aventura\")\nprint(\"Puedes moverte a la derecha 'd', a la izquierda 'a' o hacia adelante 'w'\")\nopcion = input(\"Corres hacia la montaña nevada. Un ruido te detiene. (muévete): \")\nif opcion == \"a\":\n    print(\"Ves un gran oso que comienza a avanzar a ti.\")\n    opcion = input(\"Te quedas quieto. Te comienzas a deslizar hacia un lado: \")\n    if opcion == \"w\":\n        print(\"Te mueves hacia adelante y el oso te mata.\")\n    elif opcion == \"a\":\n        print(\"Te mueves a la izquierda y una planta carnívora te come.\")\n    else:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "        print(\"Te mueves a la derecha y ves un túnel que te lleva al siguiente nivel.\")\nelif opcion == \"d\":\n    print(\"Ves una serpiente a 30 cm de tu pie.\")\n    opcion = input(\"Te quedas quieto. Te comienzas a deslizar hacia un lado: \")\n    if opcion == \"w\":\n        print(\"La serpiente te muerde y mueres.\")\n    elif opcion == \"a\":\n        print(\"Te mueves a la izquierda y una planta carnívora te come.\")\n    else:\n        print(\"Te mueves a la derecha y ves un túnel que te lleva al siguiente nivel.\")\nelse:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    print(\"Ves una luz que se acerca.\")\n    opcion = input(\"Te quedas quieto. Te comienzas a deslizar hacia un lado: \")\n    if opcion == \"w\":\n        print(\"El túnel te lleva al siguiente nivel.\")\n    elif opcion == \"a\":\n        print(\"Te mueves a la izquierda y una planta carnívora te come.\")\n    else:\n        print(\"Un león se abalanza contra ti.\")\nprint(\"Fin de la partida. Muchas gracias por jugar.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "14_ejercicio_2_4_2_division",
+    "nombre": "14_Ejercicio_2.4.2_division.py",
+    "premisa": "Premisa - Ejercicio 3 — Captura de errores con excepciones (división)\nConstruir un programa de referencia para el manejo de excepciones que capture `ValueError` y `ZeroDivisionError` al realizar una división.",
+    "solucion": "try:\n    numerador = float(input(\"Ingrese el numerador (un número): \"))\n    divisor = float(input(\"Ingrese el divisor (un número diferente de cero): \"))\n\n    if divisor == 0:\n        raise ValueError(\"¡Error! El divisor no puede ser cero.\")\n\n    resultado = numerador / divisor\n    print(f\"El resultado de la división es: {resultado}\")\n\nexcept ValueError as ve:\n    print(f\"Error: {ve}\")\nexcept ZeroDivisionError:\n    print(\"Error: No se puede dividir por cero.\")\nfinally:\n    print(\"Fin del programa.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "try:\n    numerador = float(input(\"Ingrese el numerador (un número): \"))\n    divisor = float(input(\"Ingrese el divisor (un número diferente de cero): \"))\n    if divisor == 0:\n        raise ValueError(\"¡Error! El divisor no puede ser cero.\")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    resultado = numerador / divisor\n    print(f\"El resultado de la división es: {resultado}\")\nexcept ValueError as ve:\n    print(f\"Error: {ve}\")\nexcept ZeroDivisionError:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    print(\"Error: No se puede dividir por cero.\")\nfinally:\n    print(\"Fin del programa.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "15_ejercicio_2_4_4_pasajes",
+    "nombre": "15_Ejercicio_2.4.4_pasajes.py",
+    "premisa": "Premisa - Actividad — Sistema de venta de pasajes\nConstruir un programa para la venta de pasajes con las siguientes características:\n- Solicitar la cantidad de pasajes a vender.\n- Usar un bucle `for` para iterar sobre la cantidad de pasajes.\n- En cada iteración solicitar el precio del pasaje y acumularlo en `totalIngresos`.\n- Si se ingresa un valor no numérico, mostrar un mensaje y salir del bucle con `break`.\n- Al final, imprimir el total de ingresos.",
+    "solucion": "cantidadPasajes = int(input(\"¿Cuántos pasajes deseas vender? \"))\ntotalIngresos = 0\n\nfor i in range(cantidadPasajes):\n    try:\n        precio = float(input(f\"Ingrese el precio del pasaje {i + 1}: \"))\n        totalIngresos += precio\n    except ValueError:\n        print(\"Valor no numérico ingresado. Se cancela la venta.\")\n        break\n\nprint(f\"Total de ingresos por venta de pasajes: ${totalIngresos}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "cantidadPasajes = int(input(\"¿Cuántos pasajes deseas vender? \"))\ntotalIngresos = 0\nfor i in range(cantidadPasajes):\n    try:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "        precio = float(input(f\"Ingrese el precio del pasaje {i + 1}: \"))\n        totalIngresos += precio\n    except ValueError:\n        print(\"Valor no numérico ingresado. Se cancela la venta.\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "        break\nprint(f\"Total de ingresos por venta de pasajes: ${totalIngresos}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "compras",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "16_ejercicio_2_4_2_bultos_for",
+    "nombre": "16_Ejercicio_2.4.2_bultos_for.py",
+    "premisa": "Premisa - Ejercicio 1 - Empresa de transporte: calculo de bultos con FOR\nUna empresa de transporte necesita automatizar el cobro por bultos usando un bucle for.\nPrimero solicitar la cantidad de bultos.\nPara cada bulto pedir un peso entero entre 1 y 10 kg, manejando ValueError si el dato no es numerico.\nClasificacion y valores esperados:\n- 1 a 5 kg: categoria liviana, valor $1000.\n- 6 a 10 kg: categoria normal, valor $4500.\nAcumular total por categoria y contar cuantos bultos livianos y normales se ingresaron.\nSi el peso esta fuera de 1 a 10 kg, mostrar mensaje de error y no sumar ese bulto.\nAl final imprimir totales a pagar y cantidades por categoria.",
+    "solucion": "nroBulto = 1\nvalorPesoLiviano = 1000\nvalorPesoNormal = 4500\ntotalLiviano = 0\ntotalNormal = 0\ncontadorBultosLivianos = 0\ncontadorBultosNormales = 0\n\ncantidadBultos = int(input(\"Ingrese cantidad de bultos: \"))\n\nfor i in range(cantidadBultos):\n    try:\n        pesoBulto = int(input(f\"Ingrese el peso (1 a 10kg) del bulto Nro. {nroBulto}: \"))\n    except ValueError:\n        print(\"Peso del bulto debe estar en el rango de 1 y 10kg.\")\n        continue\n\n    if 1 <= pesoBulto <= 5:\n        totalLiviano += valorPesoLiviano\n        contadorBultosLivianos += 1\n    elif 6 <= pesoBulto <= 10:\n        totalNormal += valorPesoNormal\n        contadorBultosNormales += 1\n    else:\n        print(\"Peso ingresado incorrecto (1 - 10kg)\")\n\n    nroBulto += 1\n\nprint(f\"Total a pagar por bultos livianos: {totalLiviano}\")\nprint(f\"Total a pagar por bultos normales: {totalNormal}\")\nprint(f\"Cantidad de bultos livianos: {contadorBultosLivianos}\")\nprint(f\"Cantidad de bultos normales: {contadorBultosNormales}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "nroBulto = 1\nvalorPesoLiviano = 1000\nvalorPesoNormal = 4500\ntotalLiviano = 0\ntotalNormal = 0\ncontadorBultosLivianos = 0\ncontadorBultosNormales = 0\ncantidadBultos = int(input(\"Ingrese cantidad de bultos: \"))\nfor i in range(cantidadBultos):",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    try:\n        pesoBulto = int(input(f\"Ingrese el peso (1 a 10kg) del bulto Nro. {nroBulto}: \"))\n    except ValueError:\n        print(\"Peso del bulto debe estar en el rango de 1 y 10kg.\")\n        continue\n    if 1 <= pesoBulto <= 5:\n        totalLiviano += valorPesoLiviano\n        contadorBultosLivianos += 1\n    elif 6 <= pesoBulto <= 10:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "        totalNormal += valorPesoNormal\n        contadorBultosNormales += 1\n    else:\n        print(\"Peso ingresado incorrecto (1 - 10kg)\")\n    nroBulto += 1\nprint(f\"Total a pagar por bultos livianos: {totalLiviano}\")\nprint(f\"Total a pagar por bultos normales: {totalNormal}\")\nprint(f\"Cantidad de bultos livianos: {contadorBultosLivianos}\")\nprint(f\"Cantidad de bultos normales: {contadorBultosNormales}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "17_ejercicio_2_4_2_bultos_while",
+    "nombre": "17_Ejercicio_2.4.2_bultos_while.py",
+    "premisa": "Premisa - Ejercicio 2 - Empresa de transporte: calculo de bultos con WHILE\nModificar el ejercicio de bultos para usar un ciclo while que se ejecute mientras nroBulto <= cantidadBultos.\nPrimero solicitar la cantidad de bultos.\nPara cada bulto pedir un peso entero entre 1 y 10 kg, manejando ValueError si el dato no es numerico.\nClasificacion y valores esperados:\n- 1 a 5 kg: categoria liviana, valor $1000.\n- 6 a 10 kg: categoria normal, valor $4500.\nAcumular total por categoria y contar cuantos bultos livianos y normales se ingresaron.\nSi el peso esta fuera de 1 a 10 kg, mostrar mensaje de error y no sumar ese bulto.\nAl final imprimir totales a pagar y cantidades por categoria.",
+    "solucion": "nroBulto = 1\nvalorPesoLiviano = 1000\nvalorPesoNormal = 4500\ntotalLiviano = 0\ntotalNormal = 0\ncontadorBultosLivianos = 0\ncontadorBultosNormales = 0\n\ncantidadBultos = int(input(\"Ingrese cantidad de bultos: \"))\n\nwhile nroBulto <= cantidadBultos:\n    try:\n        pesoBulto = int(input(f\"Ingrese el peso (1 a 10kg) del bulto Nro. {nroBulto}: \"))\n    except ValueError:\n        print(\"Peso del bulto debe estar en el rango de 1 y 10kg.\")\n        continue\n\n    if 1 <= pesoBulto <= 5:\n        totalLiviano += valorPesoLiviano\n        contadorBultosLivianos += 1\n    elif 6 <= pesoBulto <= 10:\n        totalNormal += valorPesoNormal\n        contadorBultosNormales += 1\n    else:\n        print(\"Peso ingresado incorrecto (1 - 10kg)\")\n\n    nroBulto += 1\n\nprint(f\"Total a pagar por bultos livianos: {totalLiviano}\")\nprint(f\"Total a pagar por bultos normales: {totalNormal}\")\nprint(f\"Cantidad de bultos livianos: {contadorBultosLivianos}\")\nprint(f\"Cantidad de bultos normales: {contadorBultosNormales}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "nroBulto = 1\nvalorPesoLiviano = 1000\nvalorPesoNormal = 4500\ntotalLiviano = 0\ntotalNormal = 0\ncontadorBultosLivianos = 0\ncontadorBultosNormales = 0\ncantidadBultos = int(input(\"Ingrese cantidad de bultos: \"))\nwhile nroBulto <= cantidadBultos:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    try:\n        pesoBulto = int(input(f\"Ingrese el peso (1 a 10kg) del bulto Nro. {nroBulto}: \"))\n    except ValueError:\n        print(\"Peso del bulto debe estar en el rango de 1 y 10kg.\")\n        continue\n    if 1 <= pesoBulto <= 5:\n        totalLiviano += valorPesoLiviano\n        contadorBultosLivianos += 1\n    elif 6 <= pesoBulto <= 10:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "        totalNormal += valorPesoNormal\n        contadorBultosNormales += 1\n    else:\n        print(\"Peso ingresado incorrecto (1 - 10kg)\")\n    nroBulto += 1\nprint(f\"Total a pagar por bultos livianos: {totalLiviano}\")\nprint(f\"Total a pagar por bultos normales: {totalNormal}\")\nprint(f\"Cantidad de bultos livianos: {contadorBultosLivianos}\")\nprint(f\"Cantidad de bultos normales: {contadorBultosNormales}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "18_ejercicio_2_5_4_piramide",
+    "nombre": "18_Ejercicio_2.5.4_piramide.py",
+    "premisa": "Premisa - Ejercicio 5 - Piramide de ladrillos\nDado un numero de ladrillos disponibles, calcular cuantos pisos completos tendra una piramide.\nCada piso requiere un ladrillo mas que el piso anterior.\nSolo se cuenta un piso si hay ladrillos suficientes para completarlo.\nUsar un ciclo while, acumuladores para ladrillos utilizados y altura, y mostrar la altura final.",
+    "solucion": "ladrillos = int(input(\"Introduzca el número de ladrillos disponibles: \"))\naltura = 0\nutilizados = 0\npor_fila = 1\n\nwhile utilizados < ladrillos:\n    altura += 1\n    por_fila += 1\n    utilizados += por_fila\n\nprint(\"La altura de la pirámide es de:\", altura)",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "ladrillos = int(input(\"Introduzca el número de ladrillos disponibles: \"))\naltura = 0\nutilizados = 0",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "por_fila = 1\nwhile utilizados < ladrillos:\n    altura += 1",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    por_fila += 1\n    utilizados += por_fila\nprint(\"La altura de la pirámide es de:\", altura)",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "entrada",
+      "numeros",
+      "patrones",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "19_ejercicio_2_5_2_puntos",
+    "nombre": "19_Ejercicio_2.5.2_puntos.py",
+    "premisa": "Premisa - Ejercicio 1 - Sistema de puntos acumulados\nOrdenar/crear un programa de puntos acumulados con menu y ciclo while.\nEl usuario inicia con 100000 puntos.\nMenu principal: 1) Ver mis puntos, 2) Gastar mis puntos, 3) Salir.\nAl ver puntos, mostrar el saldo y preguntar si desea volver atras (1) o salir (2).\nAl gastar puntos, solo mostrar productos si quedan al menos 10000 puntos.\nProductos disponibles:\n1. Gift Card de $10000, valor 10000 puntos.\n2. Secadora de pelo, valor 25000 puntos.\n3. Disco duro portatil, valor 30000 puntos.\nDescontar los puntos del producto elegido y mostrar el saldo restante.\nValidar opciones fuera de rango y manejar errores con try-except.",
+    "solucion": "sw = 1\npuntos = 100000\n\nwhile sw == 1:\n    print(\"1. Ver mis puntos\")\n    print(\"2. Gastar mis puntos\")\n    print(\"3. Salir\")\n    op = int(input(\"Seleccione una opción: \"))\n    try:\n        if op > 0 and op < 4:\n            if op == 1:\n                print(f\"Tiene un total de {puntos} puntos\")\n                continu = int(input(\"presione 1) para volver atrás, presione 2) para salir \"))\n                if continu == 2:\n                    print(\"Cierre de sesión exitoso, adiós\")\n                    sw = 0\n            if op == 2:\n                if puntos >= 10000:\n                    print(\"Seleccione el producto a canjear\")\n                    print(\"1.- Gift Card de $10.000, valor de 10.000 puntos\")\n                    print(\"2.- Secadora de pelo, valor de: 25.000 puntos\")\n                    print(\"3.- Disco duro portátil, valor de: 30.000 puntos\")\n                    continu = int(input(\"Seleccione la opción\"))\n                    if continu == 1:\n                        puntos = puntos - 10000\n                        print(f\"Canje exitoso, le quedan: ${puntos} puntos\")\n                    if continu == 2:\n                        puntos = puntos - 25000\n                        print(f\"Canje exitoso, le quedan: ${puntos} puntos\")\n                    if continu == 3:\n                        puntos = puntos - 30000\n                        print(f\"Canje exitoso, le quedan: ${puntos} puntos\")\n                else:\n                    print(\"No le quedan puntos disponibles\")\n            if op == 3:\n                print(\"Muchas gracias por ocupar el servicio, adiós\")\n                sw = 0\n        else:\n            print(\"Selección fuera de rango\")\n    except:\n        print(\"Ingreso Erróneo\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "sw = 1\npuntos = 100000\nwhile sw == 1:\n    print(\"1. Ver mis puntos\")\n    print(\"2. Gastar mis puntos\")\n    print(\"3. Salir\")\n    op = int(input(\"Seleccione una opción: \"))\n    try:\n        if op > 0 and op < 4:\n            if op == 1:\n                print(f\"Tiene un total de {puntos} puntos\")\n                continu = int(input(\"presione 1) para volver atrás, presione 2) para salir \"))\n                if continu == 2:\n                    print(\"Cierre de sesión exitoso, adiós\")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "                    sw = 0\n            if op == 2:\n                if puntos >= 10000:\n                    print(\"Seleccione el producto a canjear\")\n                    print(\"1.- Gift Card de $10.000, valor de 10.000 puntos\")\n                    print(\"2.- Secadora de pelo, valor de: 25.000 puntos\")\n                    print(\"3.- Disco duro portátil, valor de: 30.000 puntos\")\n                    continu = int(input(\"Seleccione la opción\"))\n                    if continu == 1:\n                        puntos = puntos - 10000\n                        print(f\"Canje exitoso, le quedan: ${puntos} puntos\")\n                    if continu == 2:\n                        puntos = puntos - 25000\n                        print(f\"Canje exitoso, le quedan: ${puntos} puntos\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "                    if continu == 3:\n                        puntos = puntos - 30000\n                        print(f\"Canje exitoso, le quedan: ${puntos} puntos\")\n                else:\n                    print(\"No le quedan puntos disponibles\")\n            if op == 3:\n                print(\"Muchas gracias por ocupar el servicio, adiós\")\n                sw = 0\n        else:\n            print(\"Selección fuera de rango\")\n    except:\n        print(\"Ingreso Erróneo\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "puntajes",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "20_ejercicio_2_5_2_cajero",
+    "nombre": "20_Ejercicio_2.5.2_cajero.py",
+    "premisa": "Premisa - Ejercicio 2 — Cajero Automático\nConstruir el programa \"CajeroAutomático\" con menú: 1) Ver mi Saldo ($500.000) — 2) Retirar Dinero — 3) Salir. Usar `try-except` y confirmación del usuario tras cada acción.",
+    "solucion": "#CajeroAutomático\nsw = 1\n\nwhile sw == 1:\n    print(\"1. Ver mi Saldo\")\n    print(\"2. Retirar Dinero\")\n    print(\"3. Salir\")\n    op = int(input(\"Seleccione una opción: \"))\n    try:\n        if op > 0 and op < 4:\n            if op == 1:\n                print(\"Tiene un saldo de $500000\")\n                continu = int(input(\"presione 1) para volver atrás, presione 2) para salir \"))\n                if continu == 2:\n                    print(\"Cierre de sesión exitoso, adiós\")\n                    sw = 0\n            if op == 2:\n                print(\"Transferencia realizada\")\n                continu = int(input(\"presione 1) para volver atrás, presione 2) para salir \"))\n                if continu == 2:\n                    print(\"Cierre de sesión exitoso, adiós\")\n                    sw = 0\n            if op == 3:\n                print(\"Cierre de sesión exitoso, adiós\")\n                sw = 0\n        else:\n            print(\"Selección fuera de rango\")\n    except:\n        print(\"Ingreso Erróneo\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "#CajeroAutomático\nsw = 1\nwhile sw == 1:\n    print(\"1. Ver mi Saldo\")\n    print(\"2. Retirar Dinero\")\n    print(\"3. Salir\")\n    op = int(input(\"Seleccione una opción: \"))\n    try:\n        if op > 0 and op < 4:\n            if op == 1:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "                print(\"Tiene un saldo de $500000\")\n                continu = int(input(\"presione 1) para volver atrás, presione 2) para salir \"))\n                if continu == 2:\n                    print(\"Cierre de sesión exitoso, adiós\")\n                    sw = 0\n            if op == 2:\n                print(\"Transferencia realizada\")\n                continu = int(input(\"presione 1) para volver atrás, presione 2) para salir \"))\n                if continu == 2:\n                    print(\"Cierre de sesión exitoso, adiós\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "                    sw = 0\n            if op == 3:\n                print(\"Cierre de sesión exitoso, adiós\")\n                sw = 0\n        else:\n            print(\"Selección fuera de rango\")\n    except:\n        print(\"Ingreso Erróneo\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida",
+      "simulacion"
+    ]
+  },
+  {
+    "id": "21_ejercicio_2_5_2_bip",
+    "nombre": "21_Ejercicio_2.5.2_bip.py",
+    "premisa": "Premisa - Ejercicio 3 - Carga Tarjeta Bip\nObservar el codigo base de una tarjeta Bip con saldo inicial 0 y menu: 1) Ver saldo, 2) Cargar saldo, 3) Salir.\nLa opcion de carga ya permite cargar $1000 y $5000.\nAgregar dentro de la opcion 2 una tercera alternativa: 3.- $20000.\nSi el usuario selecciona esa alternativa, sumar 20000 al saldo actual y mostrar el nuevo saldo.\nMantener el comportamiento del menu, la opcion para volver atras o salir y el try-except del codigo base.",
+    "solucion": "print(\"3.-  $20.000\")\n\nif continu == 3:\n    saldo = saldo + 20000\n    print(f\"Carga exitosa, su saldo es de: ${saldo}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Procesar los valores intermedios segun las reglas del enunciado."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "print(\"3.-  $20.000\")\nif continu == 3:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    saldo = saldo + 20000\n    print(f\"Carga exitosa, su saldo es de: ${saldo}\")",
+        "paso_asociado": "paso_2"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "22_ejercicio_2_5_3_tarjeta",
+    "nombre": "22_Ejercicio_2.5.3_tarjeta.py",
+    "premisa": "Premisa - Actividad — Sistema de gestión de tarjeta de crédito\nPrograma con menú para gestionar una tarjeta de crédito:\n\n1. **Pago de Tarjeta:** deuda inicial $100.000; validar que el monto sea ≥ 0 y no exceda la deuda; descontar del total.\n2. **Simulación de Compras:** número ilimitado de compras; validar monto ≥ 0; actualizar deuda en cada iteración.\n3. **Salir:** cerrar el programa.\n\nUsar `try-except` con mensajes de error específicos.",
+    "solucion": "deuda = 100000\nsw = 1\n\nwhile sw == 1:\n    print(\"1. Pago de Tarjeta de Crédito\")\n    print(\"2. Simulación de Compras\")\n    print(\"3. Salir\")\n    try:\n        op = int(input(\"Seleccione una opción: \"))\n        if op == 1:\n            try:\n                pago = float(input(f\"Ingrese el monto a pagar (deuda actual: ${deuda}): \"))\n                if pago < 0:\n                    print(\"Error: el monto debe ser mayor o igual a cero.\")\n                elif pago > deuda:\n                    print(\"Error: el monto no puede exceder la deuda actual.\")\n                else:\n                    deuda -= pago\n                    print(f\"Pago realizado. Deuda restante: ${deuda}\")\n            except ValueError:\n                print(\"Error: ingrese un valor numérico.\")\n        elif op == 2:\n            while True:\n                try:\n                    compra = float(input(\"Ingrese el monto de la compra (0 para terminar): \"))\n                    if compra < 0:\n                        print(\"Error: el monto debe ser mayor o igual a cero.\")\n                    else:\n                        deuda += compra\n                        print(f\"Compra registrada. Deuda actual: ${deuda}\")\n                        if compra == 0:\n                            break\n                except ValueError:\n                    print(\"Error: ingrese un valor numérico.\")\n        elif op == 3:\n            print(\"Hasta luego.\")\n            sw = 0\n        else:\n            print(\"Opción no válida. Ingrese 1, 2 o 3.\")\n    except ValueError:\n        print(\"Error: ingrese un número válido.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "deuda = 100000\nsw = 1\nwhile sw == 1:\n    print(\"1. Pago de Tarjeta de Crédito\")\n    print(\"2. Simulación de Compras\")\n    print(\"3. Salir\")\n    try:\n        op = int(input(\"Seleccione una opción: \"))\n        if op == 1:\n            try:\n                pago = float(input(f\"Ingrese el monto a pagar (deuda actual: ${deuda}): \"))\n                if pago < 0:\n                    print(\"Error: el monto debe ser mayor o igual a cero.\")\n                elif pago > deuda:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "                    print(\"Error: el monto no puede exceder la deuda actual.\")\n                else:\n                    deuda -= pago\n                    print(f\"Pago realizado. Deuda restante: ${deuda}\")\n            except ValueError:\n                print(\"Error: ingrese un valor numérico.\")\n        elif op == 2:\n            while True:\n                try:\n                    compra = float(input(\"Ingrese el monto de la compra (0 para terminar): \"))\n                    if compra < 0:\n                        print(\"Error: el monto debe ser mayor o igual a cero.\")\n                    else:\n                        deuda += compra",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "                        print(f\"Compra registrada. Deuda actual: ${deuda}\")\n                        if compra == 0:\n                            break\n                except ValueError:\n                    print(\"Error: ingrese un valor numérico.\")\n        elif op == 3:\n            print(\"Hasta luego.\")\n            sw = 0\n        else:\n            print(\"Opción no válida. Ingrese 1, 2 o 3.\")\n    except ValueError:\n        print(\"Error: ingrese un número válido.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida",
+      "validacion"
+    ]
+  },
+  {
+    "id": "23_ejercicio_2_5_4_luces",
+    "nombre": "23_Ejercicio_2.5.4_luces.py",
+    "premisa": "Premisa - Ejercicio 1 — Control de luces IoT (toggle)\nUna empresa de IoT desarrolla un sistema de control de luces por internet. El menú permite encender/apagar cada luz de forma alternada (toggle). La misma opción que enciende también apaga.\n\n**Menú:**\n```\n1.- Encender/Apagar luces Patio (Alternado)\n2.- Encender/Apagar luces Sala (Alternado)\n3.- Encender/Apagar luces Pasillo (Alternado)\n4.- Encender/Apagar luces Jardín (Alternado)\n5.- Encender todo\n6.- Apagar todo\n7.- Salir del sistema\n```",
+    "solucion": "patio = False\nsala = False\npasillo = False\njardin = False\n\nwhile True:\n    print(\"1.- Enceder/Apagar luces Patio (Alternado)\")\n    print(\"2.- Enceder/Apagar luces Sala (Alternado)\")\n    print(\"3.- Enceder/Apagar luces Pasillo (Alternado)\")\n    print(\"4.- Enceder/Apagar luces Jardín (Alternado)\")\n    print(\"5.- Enceder todo (Alternado)\")\n    print(\"6.- Apagar todo (Alternado)\")\n    print(\"7.- Salir del sistema\")\n    try:\n        opcion = int(input(\"Ingrese la opción deseada: \"))\n    except:\n        opcion = 0\n\n    if opcion == 1:\n        patio = not patio\n        print(\"El patio está\", \"encendido\" if patio else \"apagado\")\n    elif opcion == 2:\n        sala = not sala\n        print(\"La sala está\", \"encendida\" if sala else \"apagada\")\n    elif opcion == 3:\n        pasillo = not pasillo\n        print(\"El pasillo está\", \"encendido\" if pasillo else \"apagado\")\n    elif opcion == 4:\n        jardin = not jardin\n        print(\"El jardín está\", \"encendido\" if jardin else \"apagado\")\n    elif opcion == 5:\n        patio = sala = pasillo = jardin = True\n        print(\"Se han encendido todas las luces\")\n    elif opcion == 6:\n        patio = sala = pasillo = jardin = False\n        print(\"Se han apagado todas las luces\")\n    elif opcion == 7:\n        print(\"Hasta pronto...\")\n        break\n    else:\n        print(\"Opción no válida\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "patio = False\nsala = False\npasillo = False\njardin = False\nwhile True:\n    print(\"1.- Enceder/Apagar luces Patio (Alternado)\")\n    print(\"2.- Enceder/Apagar luces Sala (Alternado)\")\n    print(\"3.- Enceder/Apagar luces Pasillo (Alternado)\")\n    print(\"4.- Enceder/Apagar luces Jardín (Alternado)\")\n    print(\"5.- Enceder todo (Alternado)\")\n    print(\"6.- Apagar todo (Alternado)\")\n    print(\"7.- Salir del sistema\")\n    try:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "        opcion = int(input(\"Ingrese la opción deseada: \"))\n    except:\n        opcion = 0\n    if opcion == 1:\n        patio = not patio\n        print(\"El patio está\", \"encendido\" if patio else \"apagado\")\n    elif opcion == 2:\n        sala = not sala\n        print(\"La sala está\", \"encendida\" if sala else \"apagada\")\n    elif opcion == 3:\n        pasillo = not pasillo\n        print(\"El pasillo está\", \"encendido\" if pasillo else \"apagado\")\n    elif opcion == 4:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "        jardin = not jardin\n        print(\"El jardín está\", \"encendido\" if jardin else \"apagado\")\n    elif opcion == 5:\n        patio = sala = pasillo = jardin = True\n        print(\"Se han encendido todas las luces\")\n    elif opcion == 6:\n        patio = sala = pasillo = jardin = False\n        print(\"Se han apagado todas las luces\")\n    elif opcion == 7:\n        print(\"Hasta pronto...\")\n        break\n    else:\n        print(\"Opción no válida\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida",
+      "simulacion"
+    ]
+  },
+  {
+    "id": "24_ejercicio_2_5_4_pagos",
+    "nombre": "24_Ejercicio_2.5.4_pagos.py",
+    "premisa": "Premisa - Ejercicio 2 - \"Dulce Capricho\": metodos de pago\nCrear un menu de pago online para una compra con costo fijo de $100000.\nOpciones: 1) Tarjeta de credito, 2) PayPal, 3) Transferencia electronica, 4) Cancelar, 5) Salir.\nTarjeta de credito: solicitar numero, nombre del titular, mes y ano de vencimiento; luego mostrar detalle de compra.\nPayPal: solicitar usuario y contrasena; luego mostrar detalle de compra ocultando la contrasena con asteriscos.\nTransferencia: generar un codigo de referencia aleatorio entre 10000 y 99999 y mostrar estos datos bancarios:\nNombre destinatario: Dulce Capricho S.A.; numero de cuenta: 79.548.642-0; banco: Banco Internacional; correo: pago@capricho.com.\nCancelar debe mostrar que el pago fue cancelado y permitir seguir en el menu.\nSalir debe cerrar el menu. Para opciones invalidas, mostrar mensaje de error.",
+    "solucion": "import random\n\npago = 100000\n\nwhile True:\n    print(\"***************Menu*******************\")\n    print(\"1.- Pagar con tarjeta de crédito\")\n    print(\"2.- Pagar con PayPal\")\n    print(\"3.- Pagar por transferencia\")\n    print(\"4.- Cancelar\")\n    print(\"5.- Salir\")\n    try:\n        opcion = int(input(\"Ingrese la opción deseada: \"))\n    except:\n        opcion = 0\n\n    if opcion == 1:\n        numero = input(\"Ingrese número de tarjeta de crédito: \")\n        nombre = input(\"Ingrese nombre titular: \")\n        mes = input(\"Ingrese mes de vencimiento: \")\n        anio = input(\"Ingrese año vencimiento: \")\n        print(\"Detalle compra\")\n        print(f\"Costo de la compra: {pago}\")\n        print(\"Número de tarjeta:\", numero)\n        print(\"Nombre del titular:\", nombre)\n        print(f\"Mes y año: {mes}/{anio}\")\n        break\n    elif opcion == 2:\n        usuario = input(\"Ingrese usuario: \")\n        password = input(\"Ingrese contraseña: \")\n        print(\"Detalle compra\")\n        print(f\"Costo de la compra: {pago}\")\n        print(\"Usuario:\", usuario)\n        print(\"Password: ********\")\n        break\n    elif opcion == 3:\n        numero_orden = random.randint(10000, 99999)\n        print(\"Detalle compra\")\n        print(\"Codigo referencia:\", numero_orden)\n        print(f\"Costo de la compra: {pago}\")\n        print(\"Nombre Destinatario: Dulce Capricho S.A.\")\n        print(\"Número de cuenta: 79.548.642-0\")\n        print(\"Banco: Banco Internacional\")\n        print(\"Correo: pago@capricho.com\")\n        break\n    elif opcion == 4:\n        print(\"Pago cancelado\")\n    elif opcion == 5:\n        print(\"Hasta pronto...\")\n        break\n    else:\n        print(\"Opción no válida\")\n\nprint(\"Muchas gracias por su compra\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "import random\npago = 100000\nwhile True:\n    print(\"***************Menu*******************\")\n    print(\"1.- Pagar con tarjeta de crédito\")\n    print(\"2.- Pagar con PayPal\")\n    print(\"3.- Pagar por transferencia\")\n    print(\"4.- Cancelar\")\n    print(\"5.- Salir\")\n    try:\n        opcion = int(input(\"Ingrese la opción deseada: \"))\n    except:\n        opcion = 0\n    if opcion == 1:\n        numero = input(\"Ingrese número de tarjeta de crédito: \")\n        nombre = input(\"Ingrese nombre titular: \")\n        mes = input(\"Ingrese mes de vencimiento: \")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "        anio = input(\"Ingrese año vencimiento: \")\n        print(\"Detalle compra\")\n        print(f\"Costo de la compra: {pago}\")\n        print(\"Número de tarjeta:\", numero)\n        print(\"Nombre del titular:\", nombre)\n        print(f\"Mes y año: {mes}/{anio}\")\n        break\n    elif opcion == 2:\n        usuario = input(\"Ingrese usuario: \")\n        password = input(\"Ingrese contraseña: \")\n        print(\"Detalle compra\")\n        print(f\"Costo de la compra: {pago}\")\n        print(\"Usuario:\", usuario)\n        print(\"Password: ********\")\n        break\n    elif opcion == 3:\n        numero_orden = random.randint(10000, 99999)",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "        print(\"Detalle compra\")\n        print(\"Codigo referencia:\", numero_orden)\n        print(f\"Costo de la compra: {pago}\")\n        print(\"Nombre Destinatario: Dulce Capricho S.A.\")\n        print(\"Número de cuenta: 79.548.642-0\")\n        print(\"Banco: Banco Internacional\")\n        print(\"Correo: pago@capricho.com\")\n        break\n    elif opcion == 4:\n        print(\"Pago cancelado\")\n    elif opcion == 5:\n        print(\"Hasta pronto...\")\n        break\n    else:\n        print(\"Opción no válida\")\nprint(\"Muchas gracias por su compra\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "aleatorio",
+      "bucles",
+      "condicionales",
+      "entrada",
+      "modulos",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "25_ejercicio_2_5_4_calculadora",
+    "nombre": "25_Ejercicio_2.5.4_calculadora.py",
+    "premisa": "Premisa - Ejercicio 3 - Calculadora geometrica\nCrear una calculadora de areas y perimetros con menu principal: 1) Calcular Perimetro, 2) Calcular Area, 3) Salir.\nDentro de Perimetro y Area debe existir un submenu con: 1) Circulo, 2) Rectangulo, 3) Cuadrado, 4) Volver menu principal.\nLos submenus deben repetirse con while True hasta que el usuario elija volver.\nFormulas de perimetro: circulo = 2 * 3.14 * radio; rectangulo = 2 * (altura + ancho); cuadrado = 4 * lado.\nFormulas de area: circulo = 3.14 * radio * radio; rectangulo = altura * ancho; cuadrado = lado * lado.\nSolicitar los datos necesarios para cada figura y mostrar el resultado.",
+    "solucion": "print(\"Calculadora geométrica\")\n\nwhile True:\n    print(\"***********Menu************\")\n    print(\"1. Calcular Perímetro\")\n    print(\"2. Calcular Área\")\n    print(\"3. Salir\")\n    opcion = int(input(\"Elija una opción: \"))\n\n    if opcion == 1:\n        while True:\n            print(\"Calcular Perímetro\")\n            print(\"1. Para Círculo\")\n            print(\"2. Para Rectángulo\")\n            print(\"3. Para Cuadrado\")\n            print(\"4. Volver menu principal\")\n            opcion2 = int(input(\"Elija una opción: \"))\n            if opcion2 == 1:\n                radio = int(input(\"Ingrese radio del circulo: \"))\n                perimetro = 2 * 3.14 * radio\n                print(\"Perímetro del Circulo:\", perimetro)\n            elif opcion2 == 2:\n                altura = int(input(\"Ingrese altura del Rectángulo: \"))\n                ancho = int(input(\"Ingrese ancho del Rectángulo: \"))\n                perimetro = 2 * (altura + ancho)\n                print(\"Perímetro del Rectángulo:\", perimetro)\n            elif opcion2 == 3:\n                lado = int(input(\"Ingrese lado del Cuadrado: \"))\n                perimetro = 4 * lado\n                print(\"Perimetro del cuadrado:\", perimetro)\n            elif opcion2 == 4:\n                break\n            else:\n                print(\"Elección inválida.\")\n    elif opcion == 2:\n        while True:\n            print(\"Calcular Área\")\n            print(\"1. Para Círculo\")\n            print(\"2. Para Rectángulo\")\n            print(\"3. Para Cuadrado\")\n            print(\"4. Volver menu principal\")\n            opcion3 = int(input(\"Elija una opción: \"))\n            if opcion3 == 1:\n                radio = int(input(\"Ingrese radio del circulo: \"))\n                area = 3.14 * radio * radio\n                print(\"Área del circulo:\", area)\n            elif opcion3 == 2:\n                altura = int(input(\"Ingrese altura del Rectángulo: \"))\n                ancho = int(input(\"Ingrese ancho del Rectángulo: \"))\n                area = altura * ancho\n                print(\"Área del Rectángulo:\", area)\n            elif opcion3 == 3:\n                lado = int(input(\"Ingrese lado del Cuadrado: \"))\n                area = lado * lado\n                print(\"Área del Cuadrado:\", area)\n            elif opcion3 == 4:\n                break\n            else:\n                print(\"Elección inválida.\")\n    elif opcion == 3:\n        break\n    else:\n        print(\"Elección inválida.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "print(\"Calculadora geométrica\")\nwhile True:\n    print(\"***********Menu************\")\n    print(\"1. Calcular Perímetro\")\n    print(\"2. Calcular Área\")\n    print(\"3. Salir\")\n    opcion = int(input(\"Elija una opción: \"))\n    if opcion == 1:\n        while True:\n            print(\"Calcular Perímetro\")\n            print(\"1. Para Círculo\")\n            print(\"2. Para Rectángulo\")\n            print(\"3. Para Cuadrado\")\n            print(\"4. Volver menu principal\")\n            opcion2 = int(input(\"Elija una opción: \"))\n            if opcion2 == 1:\n                radio = int(input(\"Ingrese radio del circulo: \"))\n                perimetro = 2 * 3.14 * radio\n                print(\"Perímetro del Circulo:\", perimetro)\n            elif opcion2 == 2:\n                altura = int(input(\"Ingrese altura del Rectángulo: \"))",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "                ancho = int(input(\"Ingrese ancho del Rectángulo: \"))\n                perimetro = 2 * (altura + ancho)\n                print(\"Perímetro del Rectángulo:\", perimetro)\n            elif opcion2 == 3:\n                lado = int(input(\"Ingrese lado del Cuadrado: \"))\n                perimetro = 4 * lado\n                print(\"Perimetro del cuadrado:\", perimetro)\n            elif opcion2 == 4:\n                break\n            else:\n                print(\"Elección inválida.\")\n    elif opcion == 2:\n        while True:\n            print(\"Calcular Área\")\n            print(\"1. Para Círculo\")\n            print(\"2. Para Rectángulo\")\n            print(\"3. Para Cuadrado\")\n            print(\"4. Volver menu principal\")\n            opcion3 = int(input(\"Elija una opción: \"))\n            if opcion3 == 1:\n                radio = int(input(\"Ingrese radio del circulo: \"))",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "                area = 3.14 * radio * radio\n                print(\"Área del circulo:\", area)\n            elif opcion3 == 2:\n                altura = int(input(\"Ingrese altura del Rectángulo: \"))\n                ancho = int(input(\"Ingrese ancho del Rectángulo: \"))\n                area = altura * ancho\n                print(\"Área del Rectángulo:\", area)\n            elif opcion3 == 3:\n                lado = int(input(\"Ingrese lado del Cuadrado: \"))\n                area = lado * lado\n                print(\"Área del Cuadrado:\", area)\n            elif opcion3 == 4:\n                break\n            else:\n                print(\"Elección inválida.\")\n    elif opcion == 3:\n        break\n    else:\n        print(\"Elección inválida.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "calculadora",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "26_ejercicio_2_5_4_senal",
+    "nombre": "26_Ejercicio_2.5.4_senal.py",
+    "premisa": "Premisa - Ejercicio 4 - Senal digital DSP\nSimular en Python una senal digital compuesta dentro de un ciclo infinito.\nLa senal tiene 4 secciones en este orden:\n1. Exponencial/creciente: partir con linea=\"*\" y espacios=\"\"; repetir 11 veces imprimiendo la linea, agregando un espacio y anteponiendolo a la linea.\n2. Senoidal/decreciente: repetir 14 veces imprimiendo la linea y recortandola con linea[i:].\n3. Escalon/horizontal: reiniciar linea=\"*\" y construir una linea agregando \" *\" durante 22 iteraciones; imprimirla.\n4. Continua/vertical: agregar un asterisco al final de los espacios y repetir 14 veces imprimiendo esa columna.\nUsar time.sleep(0.05) para pausar brevemente entre impresiones.",
+    "solucion": "import time\n\nwhile True:\n    # Sección 1 - exponencial (señal creciente)\n    espacios = \"\"\n    linea = \"*\"\n    for i in range(11):\n        print(linea)\n        espacios += \" \"\n        linea = espacios + linea\n        time.sleep(0.05)\n\n    # Sección 2 - senoidal (señal decreciente)\n    for i in range(14):\n        print(linea)\n        espacios = \" \"\n        linea = linea[i:]\n        time.sleep(0.05)\n\n    # Sección 3 - escalón (línea recta horizontal)\n    linea = \"*\"\n    espacio = \" \"\n    for i in range(22):\n        linea += \" *\"\n        espacio += \" \"\n    print(linea)\n\n    # Sección 4 - continua (línea vertical)\n    espacio += \"*\"\n    for i in range(14):\n        print(espacio)\n        time.sleep(0.05)\n    print(linea)",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Procesar los valores intermedios segun las reglas del enunciado."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "import time\nwhile True:\n    # Sección 1 - exponencial (señal creciente)\n    espacios = \"\"\n    linea = \"*\"\n    for i in range(11):\n        print(linea)\n        espacios += \" \"\n        linea = espacios + linea\n        time.sleep(0.05)",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    # Sección 2 - senoidal (señal decreciente)\n    for i in range(14):\n        print(linea)\n        espacios = \" \"\n        linea = linea[i:]\n        time.sleep(0.05)\n    # Sección 3 - escalón (línea recta horizontal)\n    linea = \"*\"\n    espacio = \" \"\n    for i in range(22):",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "        linea += \" *\"\n        espacio += \" \"\n    print(linea)\n    # Sección 4 - continua (línea vertical)\n    espacio += \"*\"\n    for i in range(14):\n        print(espacio)\n        time.sleep(0.05)\n    print(linea)",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "modulos",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "27_ejercicio_2_5_5_registro",
+    "nombre": "27_Ejercicio_2.5.5_registro.py",
+    "premisa": "Premisa - Actividad — Sistema de login y registro de usuarios\nCrear un sistema con menú de inicio de sesión:\n\n**Menú principal:** 1) Iniciar sesión — 2) Registrar usuario — 3) Salir\n\nVariables iniciales:\n```python\nusuario1 = None;  usuario2 = None;  usuario3 = None\ncontrasena1 = None;  contrasena2 = None;  contrasena3 = None\n```\n\n- Si se elige opción 1 sin usuarios registrados → indicar que debe registrarse primero.\n- Login exitoso → mostrar menú secundario.\n\n**Menú secundario:** 1) Realizar llamada — 2) Enviar correo — 3) Cerrar sesión\n\n- Opción 1: solicitar número de celular de 9 dígitos que empiece con `9`.\n- Opción 2: validar que el correo contenga `@` (con `for` o `while`); pedir mensaje.\n- Opción 3: volver al menú principal.\n- Opciones inválidas en ambos menús → error y volver a pedir.",
+    "solucion": "usuario1 = None\nusuario2 = None\nusuario3 = None\ncontrasena1 = None\ncontrasena2 = None\ncontrasena3 = None\nnroUsuarios = 0\n\nsw = 1\nwhile sw == 1:\n    print(\"1. Iniciar sesión\")\n    print(\"2. Registrar usuario\")\n    print(\"3. Salir\")\n    try:\n        op = int(input(\"Seleccione una opción: \"))\n        if op == 1:\n            if nroUsuarios == 0:\n                print(\"No hay usuarios registrados. Por favor registre uno primero.\")\n            else:\n                user = input(\"Ingrese usuario: \")\n                pwd = input(\"Ingrese contraseña: \")\n                acceso = False\n                if user == usuario1 and pwd == contrasena1:\n                    acceso = True\n                elif user == usuario2 and pwd == contrasena2:\n                    acceso = True\n                elif user == usuario3 and pwd == contrasena3:\n                    acceso = True\n\n                if acceso:\n                    print(f\"Bienvenido, {user}\")\n                    sw2 = 1\n                    while sw2 == 1:\n                        print(\"1. Realizar llamada\")\n                        print(\"2. Enviar correo electrónico\")\n                        print(\"3. Cerrar sesión\")\n                        try:\n                            op2 = int(input(\"Seleccione una opción: \"))\n                            if op2 == 1:\n                                numero = input(\"Ingrese número de celular (9 dígitos, empieza con 9): \")\n                                if len(numero) == 9 and numero[0] == \"9\":\n                                    print(f\"Llamando al {numero}...\")\n                                else:\n                                    print(\"Número inválido. Debe comenzar con 9 y tener 9 dígitos.\")\n                            elif op2 == 2:\n                                correoValido = False\n                                while not correoValido:\n                                    correo = input(\"Ingrese correo electrónico: \")\n                                    for caracter in correo:\n                                        if caracter == \"@\":\n                                            correoValido = True\n                                    if not correoValido:\n                                        print(\"Correo inválido. Debe contener '@'.\")\n                                mensaje = input(\"Ingrese el mensaje a enviar: \")\n                                print(f\"Correo enviado a {correo}: '{mensaje}'\")\n                            elif op2 == 3:\n                                print(\"Sesión cerrada.\")\n                                sw2 = 0\n                            else:\n                                print(\"Opción no válida. Ingrese 1, 2 o 3.\")\n                        except ValueError:\n                            print(\"Error: ingrese un número válido.\")\n                else:\n                    print(\"Usuario o contraseña incorrectos.\")\n        elif op == 2:\n            if nroUsuarios >= 3:\n                print(\"No hay espacio para más usuarios (máximo 3).\")\n            else:\n                nuevoUser = input(\"Ingrese nombre de usuario: \")\n                nuevoPwd = input(\"Ingrese contraseña: \")\n                nroUsuarios += 1\n                if nroUsuarios == 1:\n                    usuario1 = nuevoUser\n                    contrasena1 = nuevoPwd\n                elif nroUsuarios == 2:\n                    usuario2 = nuevoUser\n                    contrasena2 = nuevoPwd\n                elif nroUsuarios == 3:\n                    usuario3 = nuevoUser\n                    contrasena3 = nuevoPwd\n                print(f\"Usuario '{nuevoUser}' registrado exitosamente.\")\n        elif op == 3:\n            print(\"Hasta luego.\")\n            sw = 0\n        else:\n            print(\"Opción no válida. Ingrese 1, 2 o 3.\")\n    except ValueError:\n        print(\"Error: ingrese un número válido.\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "usuario1 = None\nusuario2 = None\nusuario3 = None\ncontrasena1 = None\ncontrasena2 = None\ncontrasena3 = None\nnroUsuarios = 0\nsw = 1\nwhile sw == 1:\n    print(\"1. Iniciar sesión\")\n    print(\"2. Registrar usuario\")\n    print(\"3. Salir\")\n    try:\n        op = int(input(\"Seleccione una opción: \"))\n        if op == 1:\n            if nroUsuarios == 0:\n                print(\"No hay usuarios registrados. Por favor registre uno primero.\")\n            else:\n                user = input(\"Ingrese usuario: \")\n                pwd = input(\"Ingrese contraseña: \")\n                acceso = False\n                if user == usuario1 and pwd == contrasena1:\n                    acceso = True\n                elif user == usuario2 and pwd == contrasena2:\n                    acceso = True\n                elif user == usuario3 and pwd == contrasena3:\n                    acceso = True\n                if acceso:\n                    print(f\"Bienvenido, {user}\")",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "                    sw2 = 1\n                    while sw2 == 1:\n                        print(\"1. Realizar llamada\")\n                        print(\"2. Enviar correo electrónico\")\n                        print(\"3. Cerrar sesión\")\n                        try:\n                            op2 = int(input(\"Seleccione una opción: \"))\n                            if op2 == 1:\n                                numero = input(\"Ingrese número de celular (9 dígitos, empieza con 9): \")\n                                if len(numero) == 9 and numero[0] == \"9\":\n                                    print(f\"Llamando al {numero}...\")\n                                else:\n                                    print(\"Número inválido. Debe comenzar con 9 y tener 9 dígitos.\")\n                            elif op2 == 2:\n                                correoValido = False\n                                while not correoValido:\n                                    correo = input(\"Ingrese correo electrónico: \")\n                                    for caracter in correo:\n                                        if caracter == \"@\":\n                                            correoValido = True\n                                    if not correoValido:\n                                        print(\"Correo inválido. Debe contener '@'.\")\n                                mensaje = input(\"Ingrese el mensaje a enviar: \")\n                                print(f\"Correo enviado a {correo}: '{mensaje}'\")\n                            elif op2 == 3:\n                                print(\"Sesión cerrada.\")\n                                sw2 = 0\n                            else:\n                                print(\"Opción no válida. Ingrese 1, 2 o 3.\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "                        except ValueError:\n                            print(\"Error: ingrese un número válido.\")\n                else:\n                    print(\"Usuario o contraseña incorrectos.\")\n        elif op == 2:\n            if nroUsuarios >= 3:\n                print(\"No hay espacio para más usuarios (máximo 3).\")\n            else:\n                nuevoUser = input(\"Ingrese nombre de usuario: \")\n                nuevoPwd = input(\"Ingrese contraseña: \")\n                nroUsuarios += 1\n                if nroUsuarios == 1:\n                    usuario1 = nuevoUser\n                    contrasena1 = nuevoPwd\n                elif nroUsuarios == 2:\n                    usuario2 = nuevoUser\n                    contrasena2 = nuevoPwd\n                elif nroUsuarios == 3:\n                    usuario3 = nuevoUser\n                    contrasena3 = nuevoPwd\n                print(f\"Usuario '{nuevoUser}' registrado exitosamente.\")\n        elif op == 3:\n            print(\"Hasta luego.\")\n            sw = 0\n        else:\n            print(\"Opción no válida. Ingrese 1, 2 o 3.\")\n    except ValueError:\n        print(\"Error: ingrese un número válido.\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "28_ejerciciosp_parcial2_medicamentos",
+    "nombre": "28_EjercicioSp_Parcial2_medicamentos.py",
+    "premisa": "★ Especial - Ejercicio Parcial 2 - Medicamentos y despacho\nFuente: docs/Enunciado Parcial 2.pdf\n\nDesarrolle un programa en Python que permita calcular los valores finales del pack de\nmedicamentos para el cuidado de la piel y el valor final de despacho, aplicando descuentos\nsegun la edad y el tramo de la persona.\n\nValores base:\n- Medicamentos mensuales: $60000\n- Despacho a domicilio: $8000\n\nDescuento en medicamentos:\n- Edad menor o igual a 30 y tramo A o B: 18%\n- Edad menor o igual a 30 y tramo C o D: 12%\n- 31 <= edad <= 60 y tramo A o B: 12%\n- 31 <= edad <= 60 y tramo C o D: 8%\n- Edad mayor a 60: 0%\n\nDescuento en despacho:\n- Si el tramo es A o B: 10%\n- Si ademas la edad es mayor o igual a 55: 5% adicional\n\nSolicitar edad y tramo. Mostrar el valor final de medicamentos y el valor final del despacho.",
+    "solucion": "edad = int(input(\"Ingrese su edad: \"))\ntramo = input(\"Ingrese su tramo (A, B, C o D): \").upper()\n\nvalor_medicamentos = 60000\nvalor_despacho = 8000\n\nif edad <= 30 and (tramo == \"A\" or tramo == \"B\"):\n    descuento_medicamentos = 0.18\nelif edad <= 30 and (tramo == \"C\" or tramo == \"D\"):\n    descuento_medicamentos = 0.12\nelif edad >= 31 and edad <= 60 and (tramo == \"A\" or tramo == \"B\"):\n    descuento_medicamentos = 0.12\nelif edad >= 31 and edad <= 60 and (tramo == \"C\" or tramo == \"D\"):\n    descuento_medicamentos = 0.08\nelse:\n    descuento_medicamentos = 0\n\ndescuento_despacho = 0\nif tramo == \"A\" or tramo == \"B\":\n    descuento_despacho += 0.10\nif edad >= 55:\n    descuento_despacho += 0.05\n\ntotal_medicamentos = int(valor_medicamentos * (1 - descuento_medicamentos))\ntotal_despacho = int(valor_despacho * (1 - descuento_despacho))\n\nprint(f\"El valor de medicamentos es: {total_medicamentos}\")\nprint(f\"El valor del despacho es: {total_despacho}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "edad = int(input(\"Ingrese su edad: \"))\ntramo = input(\"Ingrese su tramo (A, B, C o D): \").upper()\nvalor_medicamentos = 60000\nvalor_despacho = 8000\nif edad <= 30 and (tramo == \"A\" or tramo == \"B\"):\n    descuento_medicamentos = 0.18\nelif edad <= 30 and (tramo == \"C\" or tramo == \"D\"):\n    descuento_medicamentos = 0.12",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "elif edad >= 31 and edad <= 60 and (tramo == \"A\" or tramo == \"B\"):\n    descuento_medicamentos = 0.12\nelif edad >= 31 and edad <= 60 and (tramo == \"C\" or tramo == \"D\"):\n    descuento_medicamentos = 0.08\nelse:\n    descuento_medicamentos = 0\ndescuento_despacho = 0\nif tramo == \"A\" or tramo == \"B\":",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    descuento_despacho += 0.10\nif edad >= 55:\n    descuento_despacho += 0.05\ntotal_medicamentos = int(valor_medicamentos * (1 - descuento_medicamentos))\ntotal_despacho = int(valor_despacho * (1 - descuento_despacho))\nprint(f\"El valor de medicamentos es: {total_medicamentos}\")\nprint(f\"El valor del despacho es: {total_despacho}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida",
+      "salud"
+    ]
+  },
+  {
+    "id": "28_ejerciciosspsp_parcial2_medicamentos",
+    "nombre": "28_EjercicioSsPSp_Parcial2_medicamentos.py",
+    "premisa": "Resolver el ejercicio 28_EjercicioSsPSp_Parcial2_medicamentos.py.",
+    "solucion": "medicamentos = 60000    \ndespacho = 8000\n\nwhile True:\n try:\n  edad = int(input(\"Ingrese su edad\\n\"))\n  if edad <= 0:\n     print(\"Ingrese una edad valida\")\n  else:\n      break\n except ValueError:\n     print(\"Ingrese una edad valida\")\n\n\nwhile True:\n tramo = input(\"Ingrese su Tramo. \\n A\\n B\\n C\\n D\\n \")\n tramo = tramo.upper()\n if tramo != \"A\" and tramo != \"B\" and tramo != \"C\" and tramo != \"D\":\n    print(\"Ingrese una opcion valida\")\n else:\n    break\n\n\nif edad <= 30: \n    if tramo == \"A\" or tramo == \"B\": \n        descuentoMed = 0.18\n    elif tramo == \"C\" or tramo == \"D\":\n        descuentoMed = 0.12\n    else: \n        print(\"ERROR: Entramos en otro tramo edad < 30\")\nelif 31 <= edad <= 60:\n    if tramo == \"A\" or tramo == \"B\": \n        descuentoMed = 0.12\n    elif tramo == \"C\" or tramo == \"D\":\n        descuentoMed = 0.8\n    else: \n        print(\"ERROR: Entramos en otro tramo edad > 30\")    \nelse:\n    descuentoMed = 0\n\n\nif tramo == \"A\" or tramo == \"B\":\n    descuentoDes = 0.1\n    if edad >= 55:\n        descuentoDes = descuentoDes + 0.05\nelse:\n    descuentoDes = 0\n\n\nvalorMed = medicamentos * ( 1 - descuentoMed)\nvalorDes = despacho * (1 - descuentoDes)\n\nprint(f\"El valor del medicamento es: ${valorMed} \")\nprint(f\"El valor del descuento es: ${valorDes} \")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "medicamentos = 60000    \ndespacho = 8000\nwhile True:\n try:\n  edad = int(input(\"Ingrese su edad\\n\"))\n  if edad <= 0:\n     print(\"Ingrese una edad valida\")\n  else:\n      break\n except ValueError:\n     print(\"Ingrese una edad valida\")\nwhile True:\n tramo = input(\"Ingrese su Tramo. \\n A\\n B\\n C\\n D\\n \")\n tramo = tramo.upper()\n if tramo != \"A\" and tramo != \"B\" and tramo != \"C\" and tramo != \"D\":",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    print(\"Ingrese una opcion valida\")\n else:\n    break\nif edad <= 30: \n    if tramo == \"A\" or tramo == \"B\": \n        descuentoMed = 0.18\n    elif tramo == \"C\" or tramo == \"D\":\n        descuentoMed = 0.12\n    else: \n        print(\"ERROR: Entramos en otro tramo edad < 30\")\nelif 31 <= edad <= 60:\n    if tramo == \"A\" or tramo == \"B\": \n        descuentoMed = 0.12\n    elif tramo == \"C\" or tramo == \"D\":\n        descuentoMed = 0.8",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    else: \n        print(\"ERROR: Entramos en otro tramo edad > 30\")    \nelse:\n    descuentoMed = 0\nif tramo == \"A\" or tramo == \"B\":\n    descuentoDes = 0.1\n    if edad >= 55:\n        descuentoDes = descuentoDes + 0.05\nelse:\n    descuentoDes = 0\nvalorMed = medicamentos * ( 1 - descuentoMed)\nvalorDes = despacho * (1 - descuentoDes)\nprint(f\"El valor del medicamento es: ${valorMed} \")\nprint(f\"El valor del descuento es: ${valorDes} \")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "bucles",
+      "condicionales",
+      "entrada",
+      "numeros",
+      "python",
+      "salida",
+      "salud"
+    ]
+  },
+  {
+    "id": "29_ejerciciosp_parcial2_adivina_par",
+    "nombre": "29_EjercicioSp_Parcial2_adivina_par.py",
+    "premisa": "★ Especial - Ejercicio Parcial 2 - Adivinar numero par\nFuente: docs/Enunciado Parcial 2.pdf y docs/Enunciado_parcial_2_C.docx.pdf\n\nDesarrolle un programa en Python que permita ingresar dos numeros enteros que indiquen\nun rango numerico. El primer valor debe ser menor que el segundo.\n\nLuego generar un numero aleatorio entre ese rango usando randint(num1, num2).\nSi el numero generado resulta impar, ajustarlo para que el numero final a adivinar sea par:\n- Si numero + 1 no se sale del rango, el numero final sera numero + 1.\n- Si numero + 1 se sale del rango, el numero final sera numero - 1.\n\nEl juego permite adivinar el numero final en 3 intentos:\n- Si falla el primer intento, indicar si el numero a adivinar es mayor o menor.\n- Si falla el segundo intento, indicar mayor/menor y dar una pista indicando si el primer\n  intento o el segundo estuvo mas cerca del numero correcto.\n- Si falla el tercer intento, mostrar \"Perdiste.\" y revelar el numero.\n- Si acierta en cualquier intento, terminar inmediatamente y felicitar al usuario.",
+    "solucion": "from random import randint\n\nnum1 = int(input(\"Ingrese limite inferior: \"))\nnum2 = int(input(\"Ingrese limite superior: \"))\n\nif num1 >= num2:\n    print(\"El limite inferior debe ser menor que el limite superior.\")\nelse:\n    numero = randint(num1, num2)\n\n    if numero % 2 != 0:\n        if numero + 1 <= num2:\n            numero = numero + 1\n        else:\n            numero = numero - 1\n\n    intento1 = int(input(\"Intente adivinar: \"))\n    if intento1 == numero:\n        print(\"Felicitaciones, adivino en el primer intento.\")\n    else:\n        if intento1 < numero:\n            print(\"El numero es mayor.\")\n        else:\n            print(\"El numero es menor.\")\n\n        intento2 = int(input(\"Intente de nuevo: \"))\n        if intento2 == numero:\n            print(\"Felicitaciones, adivino en su segundo intento.\")\n        else:\n            if intento2 < numero:\n                print(\"El numero es mayor.\")\n            else:\n                print(\"El numero es menor.\")\n\n            distancia1 = abs(numero - intento1)\n            distancia2 = abs(numero - intento2)\n            print(\"Te dare una pista:\")\n            if distancia2 <= distancia1:\n                print(f\"El numero que buscas esta mas cerca de {intento2} que de {intento1}\")\n            else:\n                print(f\"El numero que buscas esta mas cerca de {intento1} que de {intento2}\")\n\n            intento3 = int(input(\"Intente la ultima vez: \"))\n            if intento3 == numero:\n                print(\"Felicitaciones, pudiste adivinar.\")\n            else:\n                print(\"Perdiste.\")\n                print(f\"El numero era: {numero}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "from random import randint\nnum1 = int(input(\"Ingrese limite inferior: \"))\nnum2 = int(input(\"Ingrese limite superior: \"))\nif num1 >= num2:\n    print(\"El limite inferior debe ser menor que el limite superior.\")\nelse:\n    numero = randint(num1, num2)\n    if numero % 2 != 0:\n        if numero + 1 <= num2:\n            numero = numero + 1\n        else:\n            numero = numero - 1\n    intento1 = int(input(\"Intente adivinar: \"))\n    if intento1 == numero:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "        print(\"Felicitaciones, adivino en el primer intento.\")\n    else:\n        if intento1 < numero:\n            print(\"El numero es mayor.\")\n        else:\n            print(\"El numero es menor.\")\n        intento2 = int(input(\"Intente de nuevo: \"))\n        if intento2 == numero:\n            print(\"Felicitaciones, adivino en su segundo intento.\")\n        else:\n            if intento2 < numero:\n                print(\"El numero es mayor.\")\n            else:\n                print(\"El numero es menor.\")",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "            distancia1 = abs(numero - intento1)\n            distancia2 = abs(numero - intento2)\n            print(\"Te dare una pista:\")\n            if distancia2 <= distancia1:\n                print(f\"El numero que buscas esta mas cerca de {intento2} que de {intento1}\")\n            else:\n                print(f\"El numero que buscas esta mas cerca de {intento1} que de {intento2}\")\n            intento3 = int(input(\"Intente la ultima vez: \"))\n            if intento3 == numero:\n                print(\"Felicitaciones, pudiste adivinar.\")\n            else:\n                print(\"Perdiste.\")\n                print(f\"El numero era: {numero}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "aleatorio",
+      "condicionales",
+      "entrada",
+      "modulos",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "29_ejerciciosspsp_parcial2_adivina_par",
+    "nombre": "29_EjercicioSsPSp_Parcial2_adivina_par.py",
+    "premisa": "Resolver el ejercicio 29_EjercicioSsPSp_Parcial2_adivina_par.py.",
+    "solucion": "from random import randint\n\ndef validacion_opcion(mayor_a, numero, mensaje):\n  numero = numero\n  while True:\n   num1 = input(f\"Ingrese el {numero} numero del rango\\n\")\n   try:\n    num1 = int(num1)\n    if num1 > mayor_a:\n     return num1\n    else:\n     print(mensaje)\n   except ValueError:\n    print(\"Numero invalido\")\n  \ndef validacion_intentos(num1, num2 , intento):\n  intento = intento\n  num2 = num2 + 1\n  while True:\n   valor = input(f\"Ingrese tu {intento} intento\\n\")\n   try:\n    valor = int(valor)\n    if valor in range(num1, num2):\n     return valor\n    else:\n     print(\"Numero no en rango\")\n   except ValueError:\n    print(\"Numero invalido\")\n\n\n\nprint(\"=====================================================\")\nnum1 = validacion_opcion(-1,\"primer\", \"Ingrese un valor positivo o cero\")\nnum2 = validacion_opcion(num1,\"segundo\", \"El segundo numero debe ser mayor que el primero\")\nprint(\"=====================================================\")\n\nnumero = randint(num1,num2)\n\n\n# Ajuste numero\nif numero % 2 != 0:\n    if numero + 1 > num2:\n        numero = numero - 1\n    elif numero +1 <= num2:\n        numero = numero + 1\n\n# Inicio juego:\n\nprint(\"ADIVINA EL NUMERO\")\n#Intento 1\nintento1 = validacion_intentos(num1, num2, \"primer\")\n\nif intento1 == numero:\n  print(\"Felicidades Has adivinado\")\n\nelse: \n  # Pista 1\n  if intento1 < numero:\n    print(\"El numero es mas grande\")\n  else: \n    print(\"El numero es mas pequeÃ±o\")\n\n  #Intento 2\n  intento2 = validacion_intentos(num1, num2, \"segundo\")\n  if intento2 == numero:\n   print(\"Felicidades Has adivinado\")\n  else:\n   # Pista 2\n   if intento2 < numero:\n    print(\"El numero es mas grande\")\n   else: \n    print(\"El numero es mas pequeÃ±o\")\n   print(\"Te dare una pista! \")\n   distancia1 = abs(numero - intento1)\n   distancia2 = abs(numero - intento2)\n   if distancia1 < distancia2:\n     print(f\"El numero que buscas esta mas serca de {intento1} que de {intento2}\")\n   elif distancia2 < distancia1:\n     print(f\"El numero que buscas esta mas serca de {intento2} que de {intento1}\")\n   else:\n     print(\"El numero esta entre tus intentos\")\n    # Intento 3\n   intento3 = validacion_intentos(num1, num2, \"tercer\")\n   if intento3 == numero:\n     print(\"Felicidades Has adivinado\")\n   else:\n     print(\"Perdiste.\\n El numero era: \", numero)",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Repetir el proceso requerido usando ciclos."
+      },
+      {
+        "id": "paso_4",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "from random import randint\ndef validacion_opcion(mayor_a, numero, mensaje):\n  numero = numero\n  while True:\n   num1 = input(f\"Ingrese el {numero} numero del rango\\n\")\n   try:\n    num1 = int(num1)\n    if num1 > mayor_a:\n     return num1\n    else:\n     print(mensaje)\n   except ValueError:\n    print(\"Numero invalido\")\ndef validacion_intentos(num1, num2 , intento):\n  intento = intento\n  num2 = num2 + 1\n  while True:\n   valor = input(f\"Ingrese tu {intento} intento\\n\")\n   try:\n    valor = int(valor)\n    if valor in range(num1, num2):\n     return valor\n    else:\n     print(\"Numero no en rango\")\n   except ValueError:",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "    print(\"Numero invalido\")\nprint(\"=====================================================\")\nnum1 = validacion_opcion(-1,\"primer\", \"Ingrese un valor positivo o cero\")\nnum2 = validacion_opcion(num1,\"segundo\", \"El segundo numero debe ser mayor que el primero\")\nprint(\"=====================================================\")\nnumero = randint(num1,num2)\n# Ajuste numero\nif numero % 2 != 0:\n    if numero + 1 > num2:\n        numero = numero - 1\n    elif numero +1 <= num2:\n        numero = numero + 1\n# Inicio juego:\nprint(\"ADIVINA EL NUMERO\")\n#Intento 1\nintento1 = validacion_intentos(num1, num2, \"primer\")\nif intento1 == numero:\n  print(\"Felicidades Has adivinado\")\nelse: \n  # Pista 1\n  if intento1 < numero:\n    print(\"El numero es mas grande\")\n  else: \n    print(\"El numero es mas pequeÃ±o\")\n  #Intento 2",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "  intento2 = validacion_intentos(num1, num2, \"segundo\")\n  if intento2 == numero:\n   print(\"Felicidades Has adivinado\")\n  else:\n   # Pista 2\n   if intento2 < numero:\n    print(\"El numero es mas grande\")\n   else: \n    print(\"El numero es mas pequeÃ±o\")\n   print(\"Te dare una pista! \")\n   distancia1 = abs(numero - intento1)\n   distancia2 = abs(numero - intento2)\n   if distancia1 < distancia2:\n     print(f\"El numero que buscas esta mas serca de {intento1} que de {intento2}\")\n   elif distancia2 < distancia1:\n     print(f\"El numero que buscas esta mas serca de {intento2} que de {intento1}\")\n   else:\n     print(\"El numero esta entre tus intentos\")\n    # Intento 3\n   intento3 = validacion_intentos(num1, num2, \"tercer\")\n   if intento3 == numero:\n     print(\"Felicidades Has adivinado\")\n   else:\n     print(\"Perdiste.\\n El numero era: \", numero)",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "aleatorio",
+      "bucles",
+      "condicionales",
+      "entrada",
+      "funciones",
+      "modulos",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  },
+  {
+    "id": "30_ejerciciosp_parcial2c_residuos",
+    "nombre": "30_EjercicioSp_Parcial2C_residuos.py",
+    "premisa": "★ Especial - Ejercicio Parcial 2 C - Residuos organicos\nFuente: docs/Enunciado_parcial_2_C.docx.pdf\n\nDesarrolle un programa en Python que permita calcular el valor final de la cuota del retiro\nde residuos organicos y el valor final del kit inicial ofrecido por el servicio, aplicando\ndescuentos segun el numero de integrantes del hogar y el quintil al que pertenecen.\n\nValores base:\n- Cuota mensual del servicio: $12000\n- Kit inicial (balde + bolsas): $15000\n\nDescuento en cuota mensual:\n- Integrantes >= 5 y quintil 1 o 2: 25%\n- Integrantes >= 5 y quintil 3 o 4: 18%\n- 2 <= integrantes < 5 y quintil 1 o 2: 15%\n- 2 <= integrantes < 5 y quintil 3 o 4: 10%\n- Quintil 5 o integrantes < 2: 0%\n\nDescuento en kit:\n- Quintil 1, 2 o 3: 12%\n- Si ademas integrantes >= 4: 5% adicional\n\nSolicitar integrantes del hogar y quintil. Mostrar el valor final de la cuota y del kit.",
+    "solucion": "integrantes = int(input(\"Ingrese integrantes del hogar: \"))\nquintil = int(input(\"Ingrese quintil (1 a 5): \"))\n\nvalor_cuota = 12000\nvalor_kit = 15000\n\nif integrantes >= 5 and (quintil == 1 or quintil == 2):\n    descuento_cuota = 0.25\nelif integrantes >= 5 and (quintil == 3 or quintil == 4):\n    descuento_cuota = 0.18\nelif integrantes >= 2 and integrantes < 5 and (quintil == 1 or quintil == 2):\n    descuento_cuota = 0.15\nelif integrantes >= 2 and integrantes < 5 and (quintil == 3 or quintil == 4):\n    descuento_cuota = 0.10\nelse:\n    descuento_cuota = 0\n\ndescuento_kit = 0\nif quintil == 1 or quintil == 2 or quintil == 3:\n    descuento_kit += 0.12\nif integrantes >= 4:\n    descuento_kit += 0.05\n\ntotal_cuota = int(valor_cuota * (1 - descuento_cuota))\ntotal_kit = int(valor_kit * (1 - descuento_kit))\n\nprint(f\"El valor de la cuota es: {total_cuota}\")\nprint(f\"El valor del kit es: {total_kit}\")",
+    "pasos": [
+      {
+        "id": "paso_1",
+        "texto": "Solicitar los datos necesarios al usuario."
+      },
+      {
+        "id": "paso_2",
+        "texto": "Evaluar las condiciones del problema con estructuras condicionales."
+      },
+      {
+        "id": "paso_3",
+        "texto": "Mostrar el resultado final en pantalla."
+      }
+    ],
+    "bloques": [
+      {
+        "id": "bloque_1",
+        "etiqueta": "entrada y preparacion",
+        "lineas": "integrantes = int(input(\"Ingrese integrantes del hogar: \"))\nquintil = int(input(\"Ingrese quintil (1 a 5): \"))\nvalor_cuota = 12000\nvalor_kit = 15000\nif integrantes >= 5 and (quintil == 1 or quintil == 2):\n    descuento_cuota = 0.25\nelif integrantes >= 5 and (quintil == 3 or quintil == 4):\n    descuento_cuota = 0.18",
+        "paso_asociado": "paso_1"
+      },
+      {
+        "id": "bloque_2",
+        "etiqueta": "logica principal",
+        "lineas": "elif integrantes >= 2 and integrantes < 5 and (quintil == 1 or quintil == 2):\n    descuento_cuota = 0.15\nelif integrantes >= 2 and integrantes < 5 and (quintil == 3 or quintil == 4):\n    descuento_cuota = 0.10\nelse:\n    descuento_cuota = 0\ndescuento_kit = 0\nif quintil == 1 or quintil == 2 or quintil == 3:",
+        "paso_asociado": "paso_2"
+      },
+      {
+        "id": "bloque_3",
+        "etiqueta": "salida",
+        "lineas": "    descuento_kit += 0.12\nif integrantes >= 4:\n    descuento_kit += 0.05\ntotal_cuota = int(valor_cuota * (1 - descuento_cuota))\ntotal_kit = int(valor_kit * (1 - descuento_kit))\nprint(f\"El valor de la cuota es: {total_cuota}\")\nprint(f\"El valor del kit es: {total_kit}\")",
+        "paso_asociado": "paso_3"
+      }
+    ],
+    "etiquetas": [
+      "condicionales",
+      "entrada",
+      "medioambiente",
+      "numeros",
+      "python",
+      "salida"
+    ]
+  }
+]

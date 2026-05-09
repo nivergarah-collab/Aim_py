@@ -28,3 +28,5 @@ ejercicios resueltos/
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
